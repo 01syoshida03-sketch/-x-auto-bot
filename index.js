@@ -28,7 +28,7 @@ async function generateBusinessPrompt() {
 ビジネスパーソンが日々の業務で即座に使える実用的なプロンプトを1つ紹介してください。
 
 ## 必須制約（絶対厳守）:
-- 全体の文字数を「270文字以内」に絶対におさめてください。
+- 全体の文字数を「130文字以内」に絶対におさめてください。
 - 日本語で作成してください。
 
 ## 出力フォーマット（厳守）:
@@ -39,17 +39,17 @@ async function generateBusinessPrompt() {
 (プロンプトの内容)
 ポイント: (コツを一言)
 
-#Gemini #AI活用 #生産性向上`;
+#Gemini #AI活用`;
 
   try {
     const result = await model.generateContent(prompt);
     const response = await result.response;
     let text = response.text();
     
-    // Xの280文字制限を超えないかチェック（安全装置）
-    if (text.length > 280) {
+    // Xの140文字制限（日本語の場合）を超えないかチェック（安全装置）
+    if (text.length > 140) {
       console.warn("Generated text is too long, truncating...");
-      text = text.substring(0, 277) + "...";
+      text = text.substring(0, 137) + "...";
     }
     
     return text;
