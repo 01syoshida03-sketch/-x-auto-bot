@@ -5,32 +5,54 @@ import dotenv from "dotenv";
 dotenv.config();
 
 // 環境変数のチェック
-const requiredEnv = ["GEMINI_API_KEY", "X_API_KEY", "X_API_KEY_SECRET", "X_ACCESS_TOKEN", "X_ACCESS_TOKEN_SECRET"];
+const requiredEnv = [
+  "GEMINI_API_KEY",
+  "X_API_KEY",
+  "X_API_KEY_SECRET",
+  "X_ACCESS_TOKEN",
+  "X_ACCESS_TOKEN_SECRET"
+];
+
 const missingEnv = requiredEnv.filter(env => !process.env[env]);
 if (missingEnv.length > 0) {
   console.error(`Missing environment variables: ${missingEnv.join(", ")}`);
   process.exit(1);
 }
 
-// Geminiの設定 (モデル名を極めて標準的なものに設定)
+// Geminiの設定 (最新の 2.5 Flash モデルを使用)
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
 async function generateBusinessPrompt() {
-  const prompt = `ビジネスで使えるAIプロンプトを1つ、240文字以内の日本語でお知らせ。
-フォーマット：
+  const prompt = `あなたは世界最高のAIプロンプトエンジニアです。
+ビジネスパーソンが日々の業務で即座に使える実用的なプロンプトを1つ紹介してください。
+
+## 必須制約（絶対厳守）:
+- 全体の文字数を「270文字以内」に絶対におさめてください。
+- 日本語で作成してください。
+
+## 出力フォーマット（厳守）:
 【毎朝のAI仕事術】
-タイトル：
-活用シーン：
-プロンプト例：
-ポイント：
+タイトル: (名前)
+活用シーン: (役立つ場面)
+プロンプト例:
+(プロンプトの内容)
+ポイント: (コツを一言)
+
 #Gemini #AI活用 #生産性向上`;
 
   try {
-    // 確実に動作させるため、シンプルな生成を試みる
     const result = await model.generateContent(prompt);
     const response = await result.response;
-    return response.text();
+    let text = response.text();
+    
+    // Xの280文字制限を超えないかチェック（安全装置）
+    if (text.length > 280) {
+      console.warn("Generated text is too long, truncating...");
+      text = text.substring(0, 277) + "...";
+    }
+    
+    return text;
   } catch (error) {
     console.error("Gemini generation error:", error);
     throw error;
@@ -45,7 +67,9 @@ async function postToX(text) {
       accessToken: process.env.X_ACCESS_TOKEN,
       accessSecret: process.env.X_ACCESS_TOKEN_SECRET,
     });
-    await xClient.readWrite.v2.tweet(text);
+    
+    const rwClient = xClient.readWrite;
+    await rwClient.v2.tweet(text);
     console.log("Successfully posted to X!");
   } catch (error) {
     console.error("X posting error:", error);
@@ -58,6 +82,8 @@ async function main() {
   try {
     const content = await generateBusinessPrompt();
     console.log("Generated Content:\n", content);
+    console.log("Character count:", content.length);
+    
     await postToX(content);
   } catch (error) {
     console.error("Process failed:", error);
@@ -66,5 +92,3 @@ async function main() {
 }
 
 main();
-
-
