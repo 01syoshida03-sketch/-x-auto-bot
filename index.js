@@ -24,29 +24,49 @@ const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
 async function generateBusinessPrompt() {
-  const prompt = `あなたは世界最高のAIプロンプトエンジニアです。
-ビジネスパーソンが日々の業務で即座に使える実用的なプロンプトを1つ紹介してください。
+  // ① 出力のマンネリ化を防ぐための「日替わりテーマ」
+  const businessThemes = [
+    "営業リスト作成とターゲット企業分析",
+    "カスタマーサクセスにおける解約防止策",
+    "採用活動における魅力的な求人票の作成",
+    "社内のDX推進とペーパーレス化",
+    "業界トレンドとM&A事例の要約",
+    "新入社員や未経験者への業務メンタリング",
+    "顧客の潜在ニーズを引き出すヒアリング"
+  ];
+  const todayTheme = businessThemes[Math.floor(Math.random() * businessThemes.length)];
+
+  // ② AIへの指示をより厳格に、クリエイティブにする
+  const prompt = `あなたは斬新な切り口を持つ世界最高のAIプロンプトエンジニアです。
+本日のテーマ「${todayTheme}」に沿って、ビジネスパーソンがハッと驚くような質の高いプロンプトを1つ提案してください。
 
 ## 必須制約（絶対厳守）:
-- 全体の文字数を「130文字以内」に絶対におさめてください。
-- 日本語で作成してください。
+- 全体の文字数を「130文字以内」に絶対におさめてください。（超過はエラーになります）
+- 「メール作成」や「単純な要約」などのありきたりな提案は禁止します。
+- プロンプト例には、[ターゲット企業]や[顧客の課題]のような[括弧]を使って汎用性を持たせてください。
 
 ## 出力フォーマット（厳守）:
 【毎朝のAI仕事術】
-タイトル: (名前)
-活用シーン: (役立つ場面)
-プロンプト例:
-(プロンプトの内容)
-ポイント: (コツを一言)
-
-#Gemini #AI活用`;
+タイトル: (目を引くタイトル)
+活用: (どう役立つか)
+プロンプト:
+(プロンプト本文)
+コツ: (一言)
+#Gemini #AI`;
 
   try {
-    const result = await model.generateContent(prompt);
+    // ③ 創造性のパラメーター（temperature）を調整して呼び出す
+    const result = await model.generateContent({
+      contents: [{ role: "user", parts: [{ text: prompt }] }],
+      generationConfig: {
+        temperature: 0.8, // 0.0(保守的) 〜 2.0(創造的)。少し高めに設定。
+      }
+    });
+    
     const response = await result.response;
     let text = response.text();
     
-    // Xの140文字制限（日本語の場合）を超えないかチェック（安全装置）
+    // Xの140文字制限を超えないかチェック（安全装置）
     if (text.length > 140) {
       console.warn("Generated text is too long, truncating...");
       text = text.substring(0, 137) + "...";
