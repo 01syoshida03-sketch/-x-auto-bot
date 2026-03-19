@@ -1,123 +1,144 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { TwitterApi } from "twitter-api-v2";
 import dotenv from "dotenv";
+import fs from "fs";
+import path from "path";
 
 dotenv.config();
 
-// 環境変数のチェック
-const requiredEnv = [
-  "GEMINI_API_KEY",
-  "X_API_KEY",
-  "X_API_KEY_SECRET",
-  "X_ACCESS_TOKEN",
-  "X_ACCESS_TOKEN_SECRET"
+// 曜日ごとのフォーマットローテーション
+const FORMATS_BY_DAY = [
+  "insight",     // 日
+  "contrarian",  // 月
+  "list",        // 火
+  "question",    // 水
+  "story",       // 木
+  "contrarian",  // 金
+  "insight",     // 土
 ];
 
-const missingEnv = requiredEnv.filter(env => !process.env[env]);
-if (missingEnv.length > 0) {
-  console.error(`Missing environment variables: ${missingEnv.join(", ")}`);
-  process.exit(1);
-}
+// テーマプール
+const THEMES = [
+  "AI採用ツールの本当の落とし穴",
+  "カスタマーサクセスをAIで自動化する現実",
+  "スタートアップ営業プロセスのDX最前線",
+  "中小企業がAIで生産性を上げた実例",
+  "副業・フリーランスがAIで単価を上げる方法",
+  "転職活動にAIを使うと何が変わるか",
+  "BtoB SaaSのチャーンをAIで予防する",
+  "採用スカウトの返信率を3倍にする秘訣",
+  "ChatGPT/Geminiを仕事で使いこなす人の習慣",
+  "日本企業のAI導入が遅い本当の理由",
+];
 
-// Geminiの設定 (最新の 2.5 Flash モデルを使用)
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
+const FORMAT_PROMPTS = {
+  contrarian: `【逆張り型】180-260字
+1行目: 常識を否定する断言(15字以内)
+2-3行: 根拠を具体的に
+最終行: 読者への気づきか問い
+ハッシュタグ: 1-2個のみ`,
+  list: `【リスト型】220-320字
+1行目: 数字入りタイトル(15字以内)
+①②③形式で3-5項目
+締め: 1行で要点
+ハッシュタグ: 1-2個のみ`,
+  insight: `【インサイト型】160-240字
+1行目: 意外な事実を断言(15字以内)
+2-3行: 具体例を交えて説明
+締め: 読者が「確かに」と思える一言
+ハッシュタグ: 1-2個のみ`,
+  question: `【問いかけ型】120-200字
+1行目: ドキッとする問い(15字以内)
+2-3行: 視点・ヒント提示
+締め: リプを促す一言
+ハッシュタグ: 1個のみ`,
+  story: `【事例型】200-300字
+1行目: 驚きの変化から始める(15字以内)
+2-3行: 状況・課題・解決策
+締め: 読者がすぐ真似できる1ポイント
+ハッシュタグ: 1-2個のみ`,
+};
 
-async function generateBusinessPrompt() {
-  // 高度で専門的な実務テーマ（文字数制限がないため、より深いインサイトを要求可能）
-  const businessThemes = [
-    "正社員採用におけるスカウト文面の高度なパーソナライズと返信率向上",
-    "カスタマーサクセスにおける解約（チャーン）兆候の早期発見と対策提案",
-    "属人化している営業・CSの業務プロセスを分解しDX化・自動化する",
-    "顧客の潜在ニーズを深掘りする商談前の仮説構築",
-    "採用要件のすり合わせと、ターゲットとなるペルソナ像の明確化",
-    "BtoB SaaSのオンボーディング期間におけるつまずきポイントの予測とフォロー"
-  ];
-  const todayTheme = businessThemes[Math.floor(Math.random() * businessThemes.length)];
+async function generatePost(format, theme) {
+  const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+  const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
-  // X Premium向けの長文・高品質プロンプトの指示
-  const prompt = `あなたは斬新な切り口と深い業務理解を持つ、世界最高のAIプロンプトエンジニアです。
-本日のテーマ「${todayTheme}」に沿って、X（Twitter）のタイムラインでプロフェッショナルの目を引く、実践的で高品質なプロンプトを1つ提案してください。
+  const prompt = `あなたは日本のXでフォロワー1万人超のAIビジネス活用専門家です。
+リアルな業務経験に基づいた「刺さる」投稿で知られています。
 
-## 必須制約:
-- 凡庸な提案（例：ただの文章作成、単純な要約）は絶対に避けること。
-- その業務の「本質的な課題」を解決するような、変数を複数使った高度なプロンプトを設計すること。
-- 文字数は400文字〜800文字程度で、読みやすく構造化すること。
+本日のテーマ:「${theme}」
 
-## 出力フォーマット（厳守）:
-🔥今日のAIハック: (目を引くタイトル)
+${FORMAT_PROMPTS[format]}
 
-【解決できる課題】
-(このプロンプトがどんなビジネス課題を解決するか、簡潔に)
+絶対ルール:
+- 1行目は15字以内。スクロールを止めるほど強烈な一言。
+- 断定口調（〜だ、〜した、〜できる）で書く
+- テンプレ感のある出だし（「今日は〜ご紹介します」等）は禁止
+- 絵文字は1-2個まで
+- ハッシュタグは最大2個、文末に付ける
 
-【コピペ用プロンプト】
-以下の[変数]を埋めて、〇〇を出力してください。
-目的: [具体的な目的]
-ターゲット: [ターゲット属性]
-現状の課題: [課題の詳細]
----
-(ここに、GeminiやChatGPTにそのままコピペして使える、条件分岐や出力形式を指定した高品質なプロンプト本文を記載)
+投稿文のみ出力（説明・前置き不要）。`;
 
-【使い方のコツ】
-(変数の埋め方のコツや、期待される出力結果のイメージを解説)
-`;
+  const result = await model.generateContent({
+    contents: [{ role: "user", parts: [{ text: prompt }] }],
+    generationConfig: { temperature: 0.92 },
+  });
 
-  try {
-    const result = await model.generateContent({
-      contents: [{ role: "user", parts: [{ text: prompt }] }],
-      generationConfig: {
-        temperature: 0.8, // 専門性と独創性のバランスを取る
-      }
-    });
-    
-    const response = await result.response;
-    let text = response.text().trim();
-    
-    // Markdownのコードブロック記号（```）が混ざった場合は削除して綺麗にする
-    text = text.replace(/```/g, "");
-
-    // ハッシュタグを最後に付与
-    const hashtags = "\n\n#AI活用 #プロンプトエンジニアリング #業務効率化 #DX";
-    return text + hashtags;
-
-  } catch (error) {
-    console.error("Gemini generation error:", error);
-    throw error;
-  }
+  let text = result.response.text().trim();
+  text = text.replace(/```[\s\S]*?```/g, "").trim();
+  return text;
 }
 
 async function postToX(text) {
-  try {
-    const xClient = new TwitterApi({
-      appKey: process.env.X_API_KEY,
-      appSecret: process.env.X_API_KEY_SECRET,
-      accessToken: process.env.X_ACCESS_TOKEN,
-      accessSecret: process.env.X_ACCESS_TOKEN_SECRET,
-    });
-    
-    const rwClient = xClient.readWrite;
-    
-    // X Premiumアカウントであれば、自動的に長文ポストとして処理されます
-    await rwClient.v2.tweet(text);
-    console.log("Successfully posted to X!");
-  } catch (error) {
-    console.error("X posting error:", error);
-    throw error;
+  const xClient = new TwitterApi({
+    appKey: process.env.X_API_KEY,
+    appSecret: process.env.X_API_KEY_SECRET,
+    accessToken: process.env.X_ACCESS_TOKEN,
+    accessSecret: process.env.X_ACCESS_TOKEN_SECRET,
+  });
+  const { data } = await xClient.readWrite.v2.tweet(text);
+  return data.id;
+}
+
+function savePostLog(tweetId, format, theme, text) {
+  const logPath = path.join(process.cwd(), "post_log.json");
+  let log = [];
+  if (fs.existsSync(logPath)) {
+    try { log = JSON.parse(fs.readFileSync(logPath, "utf-8")); } catch { log = []; }
   }
+  log.push({
+    id: tweetId,
+    date: new Date().toISOString(),
+    format,
+    theme,
+    text,
+    impressions: null,
+    likes: null,
+    retweets: null,
+    replies: null,
+  });
+  if (log.length > 90) log = log.slice(-90);
+  fs.writeFileSync(logPath, JSON.stringify(log, null, 2));
+  console.log(`Post log saved. Total: ${log.length}`);
 }
 
 async function main() {
-  console.log("Starting daily post process...");
-  try {
-    const content = await generateBusinessPrompt();
-    console.log("Generated Content:\n", content);
-    console.log("Character count:", content.length);
-    
-    await postToX(content);
-  } catch (error) {
-    console.error("Process failed:", error);
-    process.exit(1);
-  }
+  const requiredEnv = ["GEMINI_API_KEY","X_API_KEY","X_API_KEY_SECRET","X_ACCESS_TOKEN","X_ACCESS_TOKEN_SECRET"];
+  const missing = requiredEnv.filter((e) => !process.env[e]);
+  if (missing.length > 0) { console.error("Missing env vars:", missing.join(", ")); process.exit(1); }
+
+  console.log("=== X Auto Post Starting ===");
+  const format = FORMATS_BY_DAY[new Date().getDay()];
+  const theme = THEMES[Math.floor(Math.random() * THEMES.length)];
+  console.log(`Format: ${format} | Theme: ${theme}`);
+
+  const content = await generatePost(format, theme);
+  console.log("\n--- Generated ---\n" + content);
+  console.log("\nChars:", content.length);
+
+  const tweetId = await postToX(content);
+  console.log("\n✅ Posted! ID:", tweetId);
+  savePostLog(tweetId, format, theme, content);
 }
 
-main();
+main().catch((e) => { console.error("Failed:", e); process.exit(1); });
