@@ -6,7 +6,21 @@ import path from "path";
 
 dotenv.config();
 
-// 曜日ごとのフォーマットローテーション
+// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+// 投稿タイプの判定
+// 12:00 JST (UTC 3時) → インサイト系投稿
+// 20:00 JST (UTC 11時) → ビジネスプロンプト紹介投稿
+// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+function getPostType() {
+  const utcHour = new Date().getUTCHours();
+  // UTC 9-13時 → 昼枠 (JST 18-22時分も含む余裕を持たせる)
+  if (utcHour >= 2 && utcHour <= 5) return "insight";
+  return "prompt";
+}
+
+// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+// 【昼投稿】曜日ごとのフォーマットローテーション
+// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const FORMATS_BY_DAY = [
   "insight",     // 日
   "contrarian",  // 月
@@ -17,8 +31,7 @@ const FORMATS_BY_DAY = [
   "insight",     // 土
 ];
 
-// テーマプール
-const THEMES = [
+const INSIGHT_THEMES = [
   "AI採用ツールの本当の落とし穴",
   "カスタマーサクセスをAIで自動化する現実",
   "スタートアップ営業プロセスのDX最前線",
@@ -59,12 +72,30 @@ const FORMAT_PROMPTS = {
 ハッシュタグ: 1-2個のみ`,
 };
 
-async function generatePost(format, theme) {
+// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+// 【夜投稿】プロンプトカテゴリ
+// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+const PROMPT_CATEGORIES = [
+  "メール・文章作成",
+  "会議・議事録の効率化",
+  "営業・提案資料の作成",
+  "採用・面接準備",
+  "データ分析・レポート要約",
+  "アイデア出し・企画立案",
+  "顧客対応・CS業務",
+  "SNS・マーケティング文章",
+  "業務フローの見直し",
+  "学習・情報収集の効率化",
+];
+
+// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+// 昼投稿：インサイト系コンテンツ生成
+// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+async function generateInsightPost(format, theme) {
   const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
   const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
   const prompt = `あなたは日本のXでフォロワー1万人超のAIビジネス活用専門家です。
-リアルな業務経験に基づいた「刺さる」投稿で知られています。
 
 本日のテーマ:「${theme}」
 
@@ -73,9 +104,9 @@ ${FORMAT_PROMPTS[format]}
 絶対ルール:
 - 1行目は15字以内。スクロールを止めるほど強烈な一言。
 - 断定口調（〜だ、〜した、〜できる）で書く
-- テンプレ感のある出だし（「今日は〜ご紹介します」等）は禁止
+- テンプレ感のある出だし禁止
 - 絵文字は1-2個まで
-- ハッシュタグは最大2個、文末に付ける
+- ハッシュタグは最大2個、文末に
 
 投稿文のみ出力（説明・前置き不要）。`;
 
@@ -89,6 +120,46 @@ ${FORMAT_PROMPTS[format]}
   return text;
 }
 
+// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+// 夜投稿：ビジネスプロンプト紹介コンテンツ生成
+// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+async function generatePromptPost(category) {
+  const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+  const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
+
+  const prompt = `あなたは日本のXで「すぐ使えるAIプロンプト」を紹介するアカウントの中の人です。
+毎日1つ、ビジネスで本当に役立つプロンプトを紹介しています。
+
+本日のカテゴリ:「${category}」
+
+【フォーマット】全体150〜250字
+・1行目（フック）: 「このプロンプト、仕事が変わる」など興味を引く一言（15字以内、断言調）
+・2行目: プロンプトの用途を1行で説明
+・3〜6行目: 実際にコピペして使えるプロンプト本文（「」や【】で囲む）
+  - 変数は[○○]の形で示す
+  - 短くシンプルで汎用性が高いもの
+  - 日本のビジネスシーンで明日から使えるレベル
+・最終行: ハッシュタグ1〜2個（#AI活用 #プロンプト のどちらか）
+
+絶対ルール:
+- プロンプト本文は短く実用的に（長すぎない）
+- 「〜してください」系の単純な指示ではなく、出力形式や条件を少し加えたもの
+- 絵文字は1個まで
+- 投稿文のみ出力（前置き・説明不要）`;
+
+  const result = await model.generateContent({
+    contents: [{ role: "user", parts: [{ text: prompt }] }],
+    generationConfig: { temperature: 0.95 },
+  });
+
+  let text = result.response.text().trim();
+  text = text.replace(/```[\s\S]*?```/g, "").trim();
+  return text;
+}
+
+// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+// Xへ投稿
+// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 async function postToX(text) {
   const xClient = new TwitterApi({
     appKey: process.env.X_API_KEY,
@@ -100,7 +171,10 @@ async function postToX(text) {
   return data.id;
 }
 
-function savePostLog(tweetId, format, theme, text) {
+// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+// 投稿ログ保存
+// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+function savePostLog(tweetId, postType, format, theme, text) {
   const logPath = path.join(process.cwd(), "post_log.json");
   let log = [];
   if (fs.existsSync(logPath)) {
@@ -109,6 +183,7 @@ function savePostLog(tweetId, format, theme, text) {
   log.push({
     id: tweetId,
     date: new Date().toISOString(),
+    postType,  // "insight" or "prompt"
     format,
     theme,
     text,
@@ -122,23 +197,41 @@ function savePostLog(tweetId, format, theme, text) {
   console.log(`Post log saved. Total: ${log.length}`);
 }
 
+// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+// メイン処理
+// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 async function main() {
   const requiredEnv = ["GEMINI_API_KEY","X_API_KEY","X_API_KEY_SECRET","X_ACCESS_TOKEN","X_ACCESS_TOKEN_SECRET"];
   const missing = requiredEnv.filter((e) => !process.env[e]);
   if (missing.length > 0) { console.error("Missing env vars:", missing.join(", ")); process.exit(1); }
 
   console.log("=== X Auto Post Starting ===");
-  const format = FORMATS_BY_DAY[new Date().getDay()];
-  const theme = THEMES[Math.floor(Math.random() * THEMES.length)];
-  console.log(`Format: ${format} | Theme: ${theme}`);
 
-  const content = await generatePost(format, theme);
+  const postType = getPostType();
+  console.log(`Post type: ${postType} (UTC hour: ${new Date().getUTCHours()})`);
+
+  let content, format, theme;
+
+  if (postType === "insight") {
+    // 昼投稿：インサイト系
+    format = FORMATS_BY_DAY[new Date().getDay()];
+    theme = INSIGHT_THEMES[Math.floor(Math.random() * INSIGHT_THEMES.length)];
+    console.log(`Format: ${format} | Theme: ${theme}`);
+    content = await generateInsightPost(format, theme);
+  } else {
+    // 夜投稿：プロンプト紹介
+    format = "prompt";
+    theme = PROMPT_CATEGORIES[Math.floor(Math.random() * PROMPT_CATEGORIES.length)];
+    console.log(`Category: ${theme}`);
+    content = await generatePromptPost(theme);
+  }
+
   console.log("\n--- Generated ---\n" + content);
   console.log("\nChars:", content.length);
 
   const tweetId = await postToX(content);
   console.log("\n✅ Posted! ID:", tweetId);
-  savePostLog(tweetId, format, theme, content);
+  savePostLog(tweetId, postType, format, theme, content);
 }
 
 main().catch((e) => { console.error("Failed:", e); process.exit(1); });
