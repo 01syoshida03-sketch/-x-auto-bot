@@ -31,5 +31,17 @@
     "likes": null,
     "retweets": null,
     "replies": null
+  },
+  {
+    "id": "2035627042935341408",
+    "date": "2026-03-22T07:58:01.904Z",
+    "postType": "prompt",
+    "format": "prompt",
+    "theme": "学習・情報収集の効率化",
+    "text": "記事を読む時間が半分に！\n長文記事からビジネスに活かせる要点と具体的な行動計画を抽出します。💡\n\n「以下の記事を読み、ビジネス視点での重要ポイントを3つと、それに基づいた具体的なアクションプランを2つ提案してください。\n記事: [記事の本文またはURL]」\n\n#AI活用",
+    "impressions": null,
+    "likes": null,
+    "retweets": null,
+    "replies": null
   }
 ]
