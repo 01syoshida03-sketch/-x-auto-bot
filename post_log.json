@@ -43,5 +43,17 @@
     "likes": null,
     "retweets": null,
     "replies": null
+  },
+  {
+    "id": "2035679527750299662",
+    "date": "2026-03-22T11:26:35.292Z",
+    "postType": "prompt",
+    "format": "prompt",
+    "theme": "会議・議事録の効率化",
+    "text": "議事録作成、これで時短確定。\n長文議事録から要点、決定事項、ToDoを効率的に抽出します。\n\n「【決定事項とToDoを抽出】\n以下の会議議事録から、\n1. 主要な決定事項\n2. 次回までのToDoリスト（担当者と期限を明記）\nをそれぞれ箇条書きで抽出してください。\n---\n[会議議事録のテキスト]\n---\n」\n#AI活用 #プロンプト",
+    "impressions": null,
+    "likes": null,
+    "retweets": null,
+    "replies": null
   }
 ]
