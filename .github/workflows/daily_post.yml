@@ -2,10 +2,10 @@ name: Daily X Post
 
 on:
   schedule:
-    # 月〜金 12:00 JST (3:00 UTC) ← 昼休みピーク
-    - cron: '0 3 * * 1-5'
-    # 月〜金 20:00 JST (11:00 UTC) ← 夜ピーク
-    - cron: '0 11 * * 1-5'
+    # 毎日 12:00 JST (3:00 UTC)
+    - cron: '0 3 * * *'
+    # 毎日 20:00 JST (11:00 UTC)
+    - cron: '0 11 * * *'
   workflow_dispatch:
 
 permissions:
