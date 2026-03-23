@@ -55,5 +55,17 @@
     "likes": 1,
     "retweets": 0,
     "replies": 0
+  },
+  {
+    "id": "2035945745010876445",
+    "date": "2026-03-23T05:04:26.431Z",
+    "postType": "insight",
+    "format": "contrarian",
+    "theme": "BtoB SaaSのチャーンをAIで予防する",
+    "text": "SaaSチャーン、勘は無力だ。\n\n顧客の利用頻度低下、特定機能へのアクセス減少、サポート履歴のネガティブ傾向など、人が見逃す無数のシグナルをAIは瞬時に捕捉する。複雑に絡み合う膨大なデータを解析し、高精度で離反予兆をスコアリングするのだ。✨\nその「感覚」、AIでデータドリブンに変革する時だ。🤔\n#AIビジネス #SaaS",
+    "impressions": null,
+    "likes": null,
+    "retweets": null,
+    "replies": null
   }
 ]
