@@ -5,10 +5,10 @@
     "format": "story",
     "theme": "BtoB SaaSのチャーンをAIで予防する",
     "text": "解約直前、AIが止めた。\nBtoB SaaSのチャーンは、特に顧客が「沈黙」し始めた時に見逃しがちだ。この課題をAIが解決する。ログイン頻度、機能利用、サポート履歴など多角的な顧客データをAIがリアルタイム分析。チャーン予兆を数値化し、手遅れになる前にCSチームへアラートを出す。あるSaaS企業では、AIが特定顧客の利用減とヘルプ参照増加を検知し、CSが即座に介入。結果、解約寸前だった案件を複数救い、チャーン率改善に大きく貢献した。チャーン予防の第一歩は、顧客行動データの一元化と可視化だ。\n#BtoBSaaS #AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 53,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0
   },
   {
     "id": "2034853202617933882",
@@ -16,10 +16,10 @@
     "format": "contrarian",
     "theme": "ChatGPT/Geminiを仕事で使いこなす人の習慣",
     "text": "AIは思考を奪う。\n\n仕事でAIを使いこなす人は、安易にプロンプトを打ち込まない。まず「この課題の本質は何か？」「自分ならどう解決するか？」を徹底的に思考する。AIは、その思考の「壁打ち相手」であり、「アイデアの触媒」だ。AIに最初から答えを求めると、発想力や課題発見能力が著しく衰える。人間が思考し、AIがそれを増幅させる。これが最強のコンビネーションだ。\n\nあなたはAIに、何を問いかけているか？\n#AI思考 #本質的活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 18,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0
   },
   {
     "id": "2034954489287917982",
@@ -27,10 +27,10 @@
     "format": "contrarian",
     "theme": "ChatGPT/Geminiを仕事で使いこなす人の習慣",
     "text": "プロンプト凝る人は損する。\n彼らはAIを「完璧な答えを出す装置」と誤解し、プロンプト調整に時間を浪費する。使いこなす人は、AIの出力を「粗いドラフト」と割り切り、シンプルな指示で即座に結果を引き出す。その上で、人間が深掘り・考察・判断する時間こそが価値だと知っている。あなたはAIに時間を奪われていないか？🤔\n#AI活用 #本質思考",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 15,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0
   },
   {
     "id": "2035627042935341408",
@@ -39,10 +39,10 @@
     "format": "prompt",
     "theme": "学習・情報収集の効率化",
     "text": "記事を読む時間が半分に！\n長文記事からビジネスに活かせる要点と具体的な行動計画を抽出します。💡\n\n「以下の記事を読み、ビジネス視点での重要ポイントを3つと、それに基づいた具体的なアクションプランを2つ提案してください。\n記事: [記事の本文またはURL]」\n\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 24,
+    "likes": 1,
+    "retweets": 0,
+    "replies": 0
   },
   {
     "id": "2035679527750299662",
@@ -51,9 +51,9 @@
     "format": "prompt",
     "theme": "会議・議事録の効率化",
     "text": "議事録作成、これで時短確定。\n長文議事録から要点、決定事項、ToDoを効率的に抽出します。\n\n「【決定事項とToDoを抽出】\n以下の会議議事録から、\n1. 主要な決定事項\n2. 次回までのToDoリスト（担当者と期限を明記）\nをそれぞれ箇条書きで抽出してください。\n---\n[会議議事録のテキスト]\n---\n」\n#AI活用 #プロンプト",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 5,
+    "likes": 1,
+    "retweets": 0,
+    "replies": 0
   }
 ]
