@@ -115,5 +115,17 @@
     "likes": null,
     "retweets": null,
     "replies": null
+  },
+  {
+    "id": "2036771086914683154",
+    "date": "2026-03-25T11:44:03.257Z",
+    "postType": "prompt",
+    "format": "prompt",
+    "theme": "データ分析・レポート要約",
+    "text": "資料作成が爆速に！🚀\n会議資料、レポート、議事録...長文資料の要点を30秒で掴む！\n\n「以下の[資料本文]を読み、重要度が高い順に3つの要点と、その資料から導き出される次のアクション案を箇条書きで示してください。\n【資料本文】\n[ここに資料のテキストをペースト]」\n\n#AI活用",
+    "impressions": null,
+    "likes": null,
+    "retweets": null,
+    "replies": null
   }
 ]
