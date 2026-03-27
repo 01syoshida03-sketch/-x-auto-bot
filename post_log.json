@@ -151,5 +151,17 @@
     "likes": null,
     "retweets": null,
     "replies": null
+  },
+  {
+    "id": "2037396294918885532",
+    "date": "2026-03-27T05:08:24.461Z",
+    "postType": "insight",
+    "format": "contrarian",
+    "theme": "ChatGPT/Geminiを仕事で使いこなす人の習慣",
+    "text": "AIで時短、は誤解。\n知人から聞いた話だと、AIでサクッと終わらせようとしたら、結局手直しが増えて二度手間になってたんだよね。本当に使いこなしてる人は、壁打ち相手にしたり、思考を深めるために使ってる印象。結果的にアウトプットの質が上がったり、新しいアイデアが生まれたりしてる。時短目的だと、かえって時間がかかることもあるんじゃないかな。あなたのAI活用、何が目的になってる？🤔\n#AI活用 #仕事術",
+    "impressions": null,
+    "likes": null,
+    "retweets": null,
+    "replies": null
   }
 ]
