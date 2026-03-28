@@ -187,5 +187,17 @@
     "likes": null,
     "retweets": null,
     "replies": null
+  },
+  {
+    "id": "2037854879612338489",
+    "date": "2026-03-28T11:30:39.560Z",
+    "postType": "prompt",
+    "format": "prompt",
+    "theme": "メール・文章作成",
+    "text": "表現に迷った時に役立った。\n\n既存の文章を、ビジネスシーンで適切なトーンに調整してくれるプロンプトです。\n\n「以下の文章を、[トーン]の指示に従って自然な表現に調整してください。例: 「丁寧なビジネス文」「簡潔な報告書」「親しみやすい説明」など。文章: [文章]」\n#AI活用",
+    "impressions": null,
+    "likes": null,
+    "retweets": null,
+    "replies": null
   }
 ]
