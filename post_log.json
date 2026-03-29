@@ -199,5 +199,17 @@
     "likes": null,
     "retweets": null,
     "replies": null
+  },
+  {
+    "id": "2038121996924420596",
+    "date": "2026-03-29T05:12:05.317Z",
+    "postType": "insight",
+    "format": "insight",
+    "theme": "カスタマーサクセスをAIで自動化する現実",
+    "text": "CS自動化、リアルな壁\n\n自分が関わるプロジェクトで、AIチャットボットを導入してCSの初期対応を一部自動化してみた。簡単なFAQへの応答は即時でできるようになったけど、顧客の深いニーズや感情に寄り添う部分は、結局人間のオペレーターが不可欠だった。AIはあくまでツールで、最終的な成功は人の手にかかってるんだと実感したよ。\n\nこのバランス、どう考える？\n#カスタマーサクセス #AI活用",
+    "impressions": null,
+    "likes": null,
+    "retweets": null,
+    "replies": null
   }
 ]
