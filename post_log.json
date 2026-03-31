@@ -259,5 +259,17 @@
     "likes": null,
     "retweets": null,
     "replies": null
+  },
+  {
+    "id": "2038947561126461459",
+    "date": "2026-03-31T11:52:35.158Z",
+    "postType": "prompt",
+    "format": "prompt",
+    "theme": "SNS・マーケティング文章",
+    "text": "昨日使ったら、良い反応もらえた。\n特定のターゲット層に届くSNS投稿文を、自然なトーンで作成するプロンプトです。\n\n「あなたはプロのSNSマーケターです。[ターゲット層]の心に響くSNS投稿文を、[伝えたい内容]について3案提案してください。親しみやすく、かつ信頼感のある語り口でお願いします。」\n\n#AI活用",
+    "impressions": null,
+    "likes": null,
+    "retweets": null,
+    "replies": null
   }
 ]
