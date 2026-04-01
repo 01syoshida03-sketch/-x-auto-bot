@@ -271,5 +271,17 @@
     "likes": null,
     "retweets": null,
     "replies": null
+  },
+  {
+    "id": "2039212594939175401",
+    "date": "2026-04-01T05:25:44.146Z",
+    "postType": "insight",
+    "format": "question",
+    "theme": "日本企業のAI導入が遅い本当の理由",
+    "text": "AI導入、諦めてない？\n\n自分がAI使ってきて思うんだけど、日本企業のAI導入が遅いのは、現場が『これどう使うんだ？』って具体的なイメージを持ててないからかも。知人の話でも、データ整備とかリスクばかりを考えて、一歩踏み出せないパターンが多い気がする。\n\nみんなの会社はどうですか？何がネックだろ？\n#AI導入 #ビジネス活用",
+    "impressions": null,
+    "likes": null,
+    "retweets": null,
+    "replies": null
   }
 ]
