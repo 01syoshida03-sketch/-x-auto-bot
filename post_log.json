@@ -283,5 +283,17 @@
     "likes": null,
     "retweets": null,
     "replies": null
+  },
+  {
+    "id": "2039310385426076092",
+    "date": "2026-04-01T11:54:19.200Z",
+    "postType": "prompt",
+    "format": "prompt",
+    "theme": "メール・文章作成",
+    "text": "これ昨日使ったらメールの書き出しが楽になった\nビジネスメールの件名と本文冒頭の候補を複数生成するプロンプト。\n「あなたはプロのビジネスライターです。[相手]に[目的]を伝えるビジネスメールの件名と本文冒頭の候補を3パターン提案してください。」\n#AI活用",
+    "impressions": null,
+    "likes": null,
+    "retweets": null,
+    "replies": null
   }
 ]
