@@ -307,5 +307,17 @@
     "likes": null,
     "retweets": null,
     "replies": null
+  },
+  {
+    "id": "2039671399090913523",
+    "date": "2026-04-02T11:48:51.552Z",
+    "postType": "prompt",
+    "format": "prompt",
+    "theme": "データ分析・レポート要約",
+    "text": "読解に時間かかっていた報告書も、これ使って助かった🙏\n長いレポートや資料の要点を素早く把握するのに使えます。\n\n「以下の[レポート本文]を読み、ビジネスパーソン向けに要約してください。特に、主要な論点、結論、そしてそこから導かれる示唆を3つ教えてください。」\n\n#AI活用",
+    "impressions": null,
+    "likes": null,
+    "retweets": null,
+    "replies": null
   }
 ]
