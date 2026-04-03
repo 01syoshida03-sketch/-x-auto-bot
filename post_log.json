@@ -319,5 +319,17 @@
     "likes": null,
     "retweets": null,
     "replies": null
+  },
+  {
+    "id": "2039932483072926206",
+    "date": "2026-04-03T05:06:18.851Z",
+    "postType": "insight",
+    "format": "contrarian",
+    "theme": "BtoB SaaSのチャーンをAIで予防する",
+    "text": "解約理由分析は後手。\n\n解約理由を尋ねても、既に手遅れのことがほとんどなんだよね。知人のSaaS企業では、AIで顧客のログイン頻度や特定の機能利用の変化を早期に検知する仕組みを導入してた。「この機能使ってない」って兆候を察知して、先回りして「困っていませんか？」と声かけるだけで、解約前の課題解決に繋がることが増えたって聞いたな。\n\nあなたの組織では、解約予兆をどう捉えてる？\n#SaaS #チャーン予防",
+    "impressions": null,
+    "likes": null,
+    "retweets": null,
+    "replies": null
   }
 ]
