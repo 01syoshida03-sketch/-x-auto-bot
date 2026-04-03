@@ -331,5 +331,17 @@
     "likes": null,
     "retweets": null,
     "replies": null
+  },
+  {
+    "id": "2040031371423322253",
+    "date": "2026-04-03T11:39:15.655Z",
+    "postType": "prompt",
+    "format": "prompt",
+    "theme": "メール・文章作成",
+    "text": "これ昨日使ったらメールが楽になった。\n依頼内容を伝えるビジネスメールを効率的に作成できます。\n「件名と本文の両方を含め、以下の[依頼内容]について、相手に丁寧かつ具体的に協力を依頼するビジネスメールを作成してください。特に[強調したいポイント]を含めてください。」\n#AI活用",
+    "impressions": null,
+    "likes": null,
+    "retweets": null,
+    "replies": null
   }
 ]
