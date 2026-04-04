@@ -355,5 +355,17 @@
     "likes": null,
     "retweets": null,
     "replies": null
+  },
+  {
+    "id": "2040391797914878302",
+    "date": "2026-04-04T11:31:28.038Z",
+    "postType": "prompt",
+    "format": "prompt",
+    "theme": "採用・面接準備",
+    "text": "面接質問の準備が捗る💡\n評価項目と求める人物像から、面接で聞くべき質問を自動生成。\n「面接で聞くべき質問を、以下の評価項目と求める人物像に沿って10個提案してください。候補者の本質を見極める質問を意識してください。評価項目：[評価項目] 求める人物像：[求める人物像]」\n#AI活用",
+    "impressions": null,
+    "likes": null,
+    "retweets": null,
+    "replies": null
   }
 ]
