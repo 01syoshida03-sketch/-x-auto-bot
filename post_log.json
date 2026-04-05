@@ -367,5 +367,17 @@
     "likes": null,
     "retweets": null,
     "replies": null
+  },
+  {
+    "id": "2040658992217706649",
+    "date": "2026-04-05T05:13:12.114Z",
+    "postType": "insight",
+    "format": "insight",
+    "theme": "AI採用ツールの本当の落とし穴",
+    "text": "AI採用ツールの盲点だった。\n知人の会社でAI採用ツールを導入した部署があるんだけど、一次スクリーニングの効率が上がった反面、最終面接に進む候補者のタイプが偏ってきたって聞いた。AIが「理想像」を学習しすぎると、型にはまらないけどポテンシャルのある人材を見落とすことがあるみたい。多様な視点、大事だよね。同じ経験ある人いる？🤔\n\n#AI採用 #採用課題",
+    "impressions": null,
+    "likes": null,
+    "retweets": null,
+    "replies": null
   }
 ]
