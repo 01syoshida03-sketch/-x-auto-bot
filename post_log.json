@@ -403,5 +403,17 @@
     "likes": null,
     "retweets": null,
     "replies": null
+  },
+  {
+    "id": "2041121391488172174",
+    "date": "2026-04-06T11:50:36.698Z",
+    "postType": "prompt",
+    "format": "prompt",
+    "theme": "顧客対応・CS業務",
+    "text": "クレーム返信が少しスムーズに。\nお客様からのクレームに対する初期返信文を作成するプロンプトです。\n「以下のクレーム内容に対して、共感を示しつつ、次のステップを伝える初期返信文を作成してください。お客様を不快にさせないよう、丁寧な言葉遣いを心がけてください。クレーム内容：[クレーム内容]」\n#AI活用",
+    "impressions": null,
+    "likes": null,
+    "retweets": null,
+    "replies": null
   }
 ]
