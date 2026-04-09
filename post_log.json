@@ -463,5 +463,17 @@
     "likes": null,
     "retweets": null,
     "replies": null
+  },
+  {
+    "id": "2042209969622454287",
+    "date": "2026-04-09T11:56:14.019Z",
+    "postType": "prompt",
+    "format": "prompt",
+    "theme": "学習・情報収集の効率化",
+    "text": "会議の要点整理が楽になった📝\n長文資料から特定の目的で必要な情報を効率よく整理するのに使えます。\n\n「以下の[資料/記事]の内容から、[あなたの目的]を達成するために最も重要な情報やポイントを3点程度に絞り、具体的な内容を抽出して簡潔にまとめてください。」\n\n#AI活用",
+    "impressions": null,
+    "likes": null,
+    "retweets": null,
+    "replies": null
   }
 ]
