@@ -18,6 +18,24 @@ function getPostType() {
 }
 
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+// Gemini API リトライユーティリティ
+// 503/429/500などの一時的エラー時に最大3回リトライ
+// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+async function withRetry(fn, maxRetries = 3, baseDelay = 5000) {
+  for (let attempt = 1; attempt <= maxRetries; attempt++) {
+    try {
+      return await fn();
+    } catch (err) {
+      const isRetryable = err.status === 503 || err.status === 429 || err.status === 500;
+      if (!isRetryable || attempt === maxRetries) throw err;
+      const delay = baseDelay * attempt;
+      console.log(`Gemini API error (${err.status}). Retry ${attempt}/${maxRetries - 1} in ${delay / 1000}s...`);
+      await new Promise((r) => setTimeout(r, delay));
+    }
+  }
+}
+
+// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 // 【昼投稿】曜日ごとのフォーマットローテーション
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const FORMATS_BY_DAY = [
@@ -114,10 +132,12 @@ ${FORMAT_PROMPTS[format]}
 - テンプレ感のある出だし禁止（「〜の時代です」「〜が重要です」禁止）
 - 投稿文のみ出力（説明・前置き不要）`;
 
-  const result = await model.generateContent({
-    contents: [{ role: "user", parts: [{ text: prompt }] }],
-    generationConfig: { temperature: 0.92 },
-  });
+  const result = await withRetry(() =>
+    model.generateContent({
+      contents: [{ role: "user", parts: [{ text: prompt }] }],
+      generationConfig: { temperature: 0.92 },
+    })
+  );
   let text = result.response.text().trim();
   text = text.replace(/```[\s\S]*?```/g, "").trim();
   return text;
@@ -148,10 +168,12 @@ async function generatePromptPost(category) {
 - 絵文字は1個以内
 - 投稿文のみ出力`;
 
-  const result = await model.generateContent({
-    contents: [{ role: "user", parts: [{ text: prompt }] }],
-    generationConfig: { temperature: 0.95 },
-  });
+  const result = await withRetry(() =>
+    model.generateContent({
+      contents: [{ role: "user", parts: [{ text: prompt }] }],
+      generationConfig: { temperature: 0.95 },
+    })
+  );
   let text = result.response.text().trim();
   text = text.replace(/```[\s\S]*?```/g, "").trim();
   return text;
