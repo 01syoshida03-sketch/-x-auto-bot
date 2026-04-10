@@ -475,5 +475,17 @@
     "likes": null,
     "retweets": null,
     "replies": null
+  },
+  {
+    "id": "2042571164422140220",
+    "date": "2026-04-10T11:51:29.491Z",
+    "postType": "prompt",
+    "format": "prompt",
+    "theme": "アイデア出し・企画立案",
+    "text": "企画の軸決め捗った！\nアイデア出しで煮詰まった時、多角的な視点から企画の方向性が見つかります。\n「[企画テーマ]について、多様な切り口から3つの企画アイデアを提案してください。それぞれのアイデアについて、ターゲット層、コンセプト、具体的な施策イメージを簡潔にまとめてください。」\n#AI活用",
+    "impressions": null,
+    "likes": null,
+    "retweets": null,
+    "replies": null
   }
 ]
