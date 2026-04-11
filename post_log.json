@@ -499,5 +499,17 @@
     "likes": null,
     "retweets": null,
     "replies": null
+  },
+  {
+    "id": "2042928760316432634",
+    "date": "2026-04-11T11:32:26.980Z",
+    "postType": "prompt",
+    "format": "prompt",
+    "theme": "アイデア出し・企画立案",
+    "text": "これ昨日使ったら会議の質上がった\n新しい企画やサービスのアイデアを多角的に引き出すプロンプトです。\n「[商品/サービス名]について、事業戦略、顧客体験、技術革新、マーケティング、社会貢献の5つの視点から、新規企画アイデアを具体的に提案してください。」\n#AI活用",
+    "impressions": null,
+    "likes": null,
+    "retweets": null,
+    "replies": null
   }
 ]
