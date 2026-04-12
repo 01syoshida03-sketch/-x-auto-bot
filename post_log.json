@@ -523,5 +523,17 @@
     "likes": null,
     "retweets": null,
     "replies": null
+  },
+  {
+    "id": "2043291982177468900",
+    "date": "2026-04-12T11:35:45.817Z",
+    "postType": "prompt",
+    "format": "prompt",
+    "theme": "学習・情報収集の効率化",
+    "text": "長文読解がかなり捗った\nWeb記事を要約し、重要ポイントを質問形式で把握するプロンプト。\n「以下のWeb記事を、ビジネスパーソン向けに簡潔に要約してください。さらに、記事の重要ポイントを3つの質問形式で抽出してください。\n記事URL: [Web記事のURL]」\n#AI活用",
+    "impressions": null,
+    "likes": null,
+    "retweets": null,
+    "replies": null
   }
 ]
