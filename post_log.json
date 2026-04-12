@@ -511,5 +511,17 @@
     "likes": null,
     "retweets": null,
     "replies": null
+  },
+  {
+    "id": "2043198712424394798",
+    "date": "2026-04-12T05:25:08.598Z",
+    "postType": "insight",
+    "format": "question",
+    "theme": "ChatGPT/Geminiを仕事で使いこなす人の習慣",
+    "text": "AIに聞く前に、何してる？\n\nAIを使いこなしてる知人と話してて、気づいたことなんだけど、みんな「聞く前に一度、自分の頭で分解してる」って言ってた。タスクのゴールと、何をAIに任せたいかを整理してからじゃないと、質の高い回答は来ないって。漠然とした質問でAIに丸投げ、は逆に時間かかるかもね。\n\nみんなはどうしてるんだろう？\n#仕事術 #AI活用",
+    "impressions": null,
+    "likes": null,
+    "retweets": null,
+    "replies": null
   }
 ]
