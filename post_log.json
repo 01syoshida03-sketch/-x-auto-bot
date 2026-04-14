@@ -559,5 +559,17 @@
     "likes": null,
     "retweets": null,
     "replies": null
+  },
+  {
+    "id": "2044022493678022937",
+    "date": "2026-04-14T11:58:33.347Z",
+    "postType": "prompt",
+    "format": "prompt",
+    "theme": "メール・文章作成",
+    "text": "返信メールの作成がかなり楽になった。\n伝えたい要点と相手の情報を入力するだけで、適切なビジネスメールの下書きを作成します。\n\n「以下の要点を踏まえ、[相手の立場や関係性]に送る丁寧で簡潔なビジネスメールを作成してください。\n[メールで伝えたい要点]」\n\n#AI活用",
+    "impressions": null,
+    "likes": null,
+    "retweets": null,
+    "replies": null
   }
 ]
