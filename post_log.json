@@ -583,5 +583,17 @@
     "likes": null,
     "retweets": null,
     "replies": null
+  },
+  {
+    "id": "2044384554866422226",
+    "date": "2026-04-15T11:57:15.470Z",
+    "postType": "prompt",
+    "format": "prompt",
+    "theme": "採用・面接準備",
+    "text": "面接準備の質が上がった💡\n候補者のスキルを深掘りする面接質問の準備に。\n\n「[職種]の採用面接において、候補者の[求めるスキル]を深掘りするための質問案を5つ提案してください。過去の経験や具体的な行動について尋ねる質問を含めてください。」\n\n#AI活用",
+    "impressions": null,
+    "likes": null,
+    "retweets": null,
+    "replies": null
   }
 ]
