@@ -607,5 +607,17 @@
     "likes": null,
     "retweets": null,
     "replies": null
+  },
+  {
+    "id": "2044747534405419227",
+    "date": "2026-04-16T11:59:36.522Z",
+    "postType": "prompt",
+    "format": "prompt",
+    "theme": "業務フローの見直し",
+    "text": "これ昨日使ったら見直しが捗った\n業務フローの課題特定と効率化案の検討に。\n「[業務名]の業務フローを見直したい。現在のフローで非効率と感じる点を具体的に指摘し、それを踏まえた上で、より効率的でシンプルな新しい手順案を3つ提案してください。」\n#AI活用",
+    "impressions": null,
+    "likes": null,
+    "retweets": null,
+    "replies": null
   }
 ]
