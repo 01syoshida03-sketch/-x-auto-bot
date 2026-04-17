@@ -631,5 +631,17 @@
     "likes": null,
     "retweets": null,
     "replies": null
+  },
+  {
+    "id": "2045108369174982703",
+    "date": "2026-04-17T11:53:26.245Z",
+    "postType": "prompt",
+    "format": "prompt",
+    "theme": "顧客対応・CS業務",
+    "text": "これ昨日使ったら返信質向上✨\nお客様からの問い合わせを要約し、返信作成のポイントを明確にするプロンプトです。\n「以下の[問い合わせ内容]を要約し、[顧客名]様への返信を作成する際に考慮すべき点と、含めるべき情報を3点以内で提案してください。」\n#AI活用",
+    "impressions": null,
+    "likes": null,
+    "retweets": null,
+    "replies": null
   }
 ]
