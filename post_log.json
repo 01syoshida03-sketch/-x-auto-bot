@@ -655,5 +655,17 @@
     "likes": null,
     "retweets": null,
     "replies": null
+  },
+  {
+    "id": "2045466508374294591",
+    "date": "2026-04-18T11:36:33.263Z",
+    "postType": "prompt",
+    "format": "prompt",
+    "theme": "業務フローの見直し",
+    "text": "複雑なフロー、これで整理が進んだ💡\n複雑な業務フローの課題と改善策を洗い出す際に役立ちます。\n\n「[現在の業務フロー]の内容を提示し、客観的な視点から課題点とボトルネックを特定してください。その後、業務効率化や品質向上に繋がる具体的な改善提案を提示してください。」\n#AI活用",
+    "impressions": null,
+    "likes": null,
+    "retweets": null,
+    "replies": null
   }
 ]
