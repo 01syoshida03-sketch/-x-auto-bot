@@ -715,5 +715,17 @@
     "likes": null,
     "retweets": null,
     "replies": null
+  },
+  {
+    "id": "2046823055133979133",
+    "date": "2026-04-22T05:26:59.243Z",
+    "postType": "insight",
+    "format": "question",
+    "theme": "仕事でAIを使い始めて変わったこと",
+    "text": "時間泥棒、減った？\n\n仕事でAI使い始めて2年。一番変わったのは、自分の時間の使い方かも。資料のたたき台や定型メール作成なんかはサクッと任せて、人との会話や企画を練る時間に回せるようになった。おかげで、もっと本質的な部分に集中できるようになった気がする。他に変わったことある？\n\n#仕事術 #AI活用",
+    "impressions": null,
+    "likes": null,
+    "retweets": null,
+    "replies": null
   }
 ]
