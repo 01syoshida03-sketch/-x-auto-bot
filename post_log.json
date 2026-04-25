@@ -751,5 +751,17 @@
     "likes": null,
     "retweets": null,
     "replies": null
+  },
+  {
+    "id": "2047906640003817488",
+    "date": "2026-04-25T05:12:45.997Z",
+    "postType": "insight",
+    "format": "question",
+    "theme": "転職活動にAIを使うと何が変わるか",
+    "text": "AI履歴書、バレる？\n最近、知人がAIで書類作成したら書類通過率が上がったって言ってた。僕自身もAIで下書きして内容を調整するけど、完璧に任せると面接で「本当にこれあなた？」って聞かれそうで怖い気がする。効率化はしつつ、どこまで自分を出すかが肝だなと。みんなどうしてる？\n#転職 #AI活用",
+    "impressions": null,
+    "likes": null,
+    "retweets": null,
+    "replies": null
   }
 ]
