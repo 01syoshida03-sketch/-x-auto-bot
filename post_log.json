@@ -811,5 +811,17 @@
     "likes": null,
     "retweets": null,
     "replies": null
+  },
+  {
+    "id": "2048739187797696607",
+    "date": "2026-04-27T12:21:00.848Z",
+    "postType": "prompt",
+    "format": "prompt",
+    "theme": "アイデア出し・企画立案",
+    "text": "これ昨日使ったら壁打ちが捗った\n企画立案の初期段階で、ターゲット視点のアイデア出しに役立つプロンプト。\n「[テーマ]に関する企画アイデアを、[ターゲット]の視点から3つ提案してください。それぞれのアイデアについて、導入と具体的なポイントを簡潔にまとめてください。」\n#AI活用",
+    "impressions": null,
+    "likes": null,
+    "retweets": null,
+    "replies": null
   }
 ]
