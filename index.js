@@ -11,6 +11,7 @@ dotenv.config();
 // 12:00 JST (UTC 3時) → インサイト系投稿
 // 20:00 JST (UTC 11時) → ビジネスプロンプト紹介投稿
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 function getPostType() {
   const utcHour = new Date().getUTCHours();
   if (utcHour >= 2 && utcHour <= 5) return "insight";
@@ -21,6 +22,7 @@ function getPostType() {
 // Gemini API リトライユーティリティ
 // 503/429/500などの一時的エラー時に最大3回リトライ
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 async function withRetry(fn, maxRetries = 3, baseDelay = 5000) {
   for (let attempt = 1; attempt <= maxRetries; attempt++) {
     try {
@@ -37,52 +39,61 @@ async function withRetry(fn, maxRetries = 3, baseDelay = 5000) {
 
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 // 【昼投稿】曜日ごとのフォーマット配分
-// 分析結果: question(avg36imp) > list(22.5) > story(17.8) > contrarian(12.5) > insight(12.3)
-// → 最高パフォーマンスのquestionを週3回、list/storyを各2回に最適化
+// 分析結果: question(avg36imp) > list(22.5) > story(17.8)
+// → questionを週3回、list/storyを各2回に最適化
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 const FORMATS_BY_DAY = [
-  "question",  // 日（avg 36imp・最強）
-  "list",      // 月（avg 22.5imp）
-  "story",     // 火（avg 17.8imp）
-  "question",  // 水（avg 36imp・最強）
-  "story",     // 木（avg 17.8imp）
-  "list",      // 金（avg 22.5imp）
-  "question",  // 土（avg 36imp・最強）
+  "question", // 日（avg 36imp・最強）
+  "list",     // 月（avg 22.5imp）
+  "story",    // 火（avg 17.8imp）
+  "question", // 水（avg 36imp・最強）
+  "story",    // 木（avg 17.8imp）
+  "list",     // 金（avg 22.5imp）
+  "question", // 土（avg 36imp・最強）
 ];
 
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 // 【昼投稿】テーマプール
-// 分析結果: 転職テーマが最高インプ64を記録
-// → 転職・副業・キャリア・仕事術に全シフト
+// 方針: 転職・副業・キャリアの3軸に完全絞り込み
+// 根拠: 転職テーマが最高インプ64imp、上位投稿もこのカテゴリに集中
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 const INSIGHT_THEMES = [
+  // ── 転職軸 ──
   "転職活動にAIを使うと何が変わるか",
-  "副業・フリーランスがAIで単価を上げる方法",
-  "AI時代に求められるキャリアの作り方",
-  "ChatGPT/Geminiを仕事で使いこなす人の習慣",
   "面接準備にAIを使うと何が変わるか",
   "転職市場でAIを使いこなす人が有利になる理由",
-  "副業で収入を上げるためにAIを使った話",
-  "仕事でAIを使い始めて変わったこと",
-  "AIで自分の市場価値を把握する方法",
   "人材会社勤務が感じるAI転職の変化",
+  "転職の自己PRをAIで言語化してみた話",
+  // ── 副業軸 ──
+  "副業・フリーランスがAIで単価を上げる方法",
+  "副業で収入を上げるためにAIを使った話",
+  "副業案件をAIで獲得した話",
+  "フリーランスへの転向でAIが役立った話",
+  // ── キャリア軸 ──
+  "AI時代に求められるキャリアの作り方",
+  "AIで自分の市場価値を把握する方法",
+  "キャリアチェンジにAIを活用した体験談",
 ];
 
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 // テーマ別ハッシュタグマッピング
-// #AI活用 一本から、テーマに合った複合タグへ
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 const THEME_HASHTAGS = {
   "転職活動にAIを使うと何が変わるか": "#転職 #AI活用",
-  "副業・フリーランスがAIで単価を上げる方法": "#副業 #AI活用",
-  "AI時代に求められるキャリアの作り方": "#キャリア #AI活用",
-  "ChatGPT/Geminiを仕事で使いこなす人の習慣": "#仕事術 #AI活用",
   "面接準備にAIを使うと何が変わるか": "#転職 #面接対策",
   "転職市場でAIを使いこなす人が有利になる理由": "#転職 #AI転職",
-  "副業で収入を上げるためにAIを使った話": "#副業 #フリーランス",
-  "仕事でAIを使い始めて変わったこと": "#仕事術 #AI活用",
-  "AIで自分の市場価値を把握する方法": "#キャリア #転職",
   "人材会社勤務が感じるAI転職の変化": "#転職 #人材業界",
+  "転職の自己PRをAIで言語化してみた話": "#転職 #自己PR",
+  "副業・フリーランスがAIで単価を上げる方法": "#副業 #AI活用",
+  "副業で収入を上げるためにAIを使った話": "#副業 #フリーランス",
+  "副業案件をAIで獲得した話": "#副業 #AI活用",
+  "フリーランスへの転向でAIが役立った話": "#フリーランス #副業",
+  "AI時代に求められるキャリアの作り方": "#キャリア #AI活用",
+  "AIで自分の市場価値を把握する方法": "#キャリア #転職",
+  "キャリアチェンジにAIを活用した体験談": "#キャリア #転職",
 };
 
 const FORMAT_PROMPTS = {
@@ -119,35 +130,38 @@ const FORMAT_PROMPTS = {
 
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 // 【夜投稿】プロンプトカテゴリ
-// 分析結果: いいね4/5がprompt型に集中。いいねが多かった順に並べ替え
+// 方針: 転職・副業・キャリア軸のプロンプトに集中
+// 根拠: いいね4/5がprompt型、エンゲージメントが最も高い
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 const PROMPT_CATEGORIES = [
-  "メール・文章作成",        // 実績: 1いいね + 1返信（最多エンゲージメント）
-  "会議・議事録の効率化",    // 実績: 1いいね
-  "営業・提案資料の作成",    // 実績: 1いいね
-  "学習・情報収集の効率化",  // 実績: 1いいね
-  "採用・面接準備",
-  "データ分析・レポート要約",
-  "アイデア出し・企画立案",
-  "顧客対応・CS業務",
-  "SNS・マーケティング文章",
-  "業務フローの見直し",
+  "転職の自己PR・職務経歴書作成",      // 転職軸（最重要）
+  "面接対策・想定質問への回答準備",    // 転職軸
+  "転職の志望動機を言語化する",        // 転職軸
+  "副業案件の提案・営業メール作成",    // 副業軸
+  "フリーランス向け見積もり・契約文書",// 副業軸
+  "副業ポートフォリオのまとめ方",      // 副業軸
+  "キャリアプランの壁打ち・言語化",    // キャリア軸
+  "年収交渉・給与アップの交渉文",      // キャリア軸
+  "スキルの棚卸しと市場価値の整理",    // キャリア軸
+  "副業・転職に使えるSNS発信文章",    // 転職/副業軸
 ];
 
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 // 昼投稿：インサイト系コンテンツ生成
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 async function generateInsightPost(format, theme) {
   const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
   const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
-  // テーマに合ったハッシュタグを取得（なければデフォルト）
-  const hashtags = THEME_HASHTAGS[theme] || "#AI活用 #仕事術";
+  const hashtags = THEME_HASHTAGS[theme] || "#転職 #AI活用";
 
   const prompt = `あなたはAIを仕事で使い始めて2年、人材会社に勤めながら副業でAIコンサルもやっているビジネスパーソンです。
 Xで日々思ったことをつぶやいています。フォロワーに向けて、今日気づいたこと・聞いた話をシェアします。
 
 テーマ:「${theme}」
+
 フォーマット指示:
 ${FORMAT_PROMPTS[format]}
 
@@ -166,6 +180,7 @@ ${FORMAT_PROMPTS[format]}
       generationConfig: { temperature: 0.92 },
     })
   );
+
   let text = result.response.text().trim();
   text = text.replace(/```[\s\S]*?```/g, "").trim();
   return text;
@@ -174,6 +189,7 @@ ${FORMAT_PROMPTS[format]}
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 // 夜投稿：ビジネスプロンプト紹介コンテンツ生成
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 async function generatePromptPost(category) {
   const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
   const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
@@ -202,6 +218,7 @@ async function generatePromptPost(category) {
       generationConfig: { temperature: 0.95 },
     })
   );
+
   let text = result.response.text().trim();
   text = text.replace(/```[\s\S]*?```/g, "").trim();
   return text;
@@ -210,6 +227,7 @@ async function generatePromptPost(category) {
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 // Xへ投稿
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 async function postToX(text) {
   const xClient = new TwitterApi({
     appKey: process.env.X_API_KEY,
@@ -217,6 +235,7 @@ async function postToX(text) {
     accessToken: process.env.X_ACCESS_TOKEN,
     accessSecret: process.env.X_ACCESS_TOKEN_SECRET,
   });
+
   const { data } = await xClient.readWrite.v2.tweet(text);
   return data.id;
 }
@@ -224,9 +243,11 @@ async function postToX(text) {
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 // 投稿ログ保存
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 function savePostLog(tweetId, postType, format, theme, text) {
   const logPath = path.join(process.cwd(), "post_log.json");
   let log = [];
+
   if (fs.existsSync(logPath)) {
     try {
       log = JSON.parse(fs.readFileSync(logPath, "utf-8"));
@@ -234,6 +255,7 @@ function savePostLog(tweetId, postType, format, theme, text) {
       log = [];
     }
   }
+
   log.push({
     id: tweetId,
     date: new Date().toISOString(),
@@ -246,6 +268,7 @@ function savePostLog(tweetId, postType, format, theme, text) {
     retweets: null,
     replies: null,
   });
+
   if (log.length > 90) log = log.slice(-90);
   fs.writeFileSync(logPath, JSON.stringify(log, null, 2));
   console.log(`Post log saved. Total: ${log.length}`);
@@ -254,15 +277,18 @@ function savePostLog(tweetId, postType, format, theme, text) {
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 // メイン処理
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 async function main() {
-  const requiredEnv = ["GEMINI_API_KEY","X_API_KEY","X_API_KEY_SECRET","X_ACCESS_TOKEN","X_ACCESS_TOKEN_SECRET"];
+  const requiredEnv = ["GEMINI_API_KEY", "X_API_KEY", "X_API_KEY_SECRET", "X_ACCESS_TOKEN", "X_ACCESS_TOKEN_SECRET"];
   const missing = requiredEnv.filter((e) => !process.env[e]);
+
   if (missing.length > 0) {
     console.error("Missing env vars:", missing.join(", "));
     process.exit(1);
   }
 
   console.log("=== X Auto Post Starting ===");
+
   const postType = getPostType();
   console.log(`Post type: ${postType} (UTC hour: ${new Date().getUTCHours()})`);
 
@@ -285,6 +311,7 @@ async function main() {
 
   const tweetId = await postToX(content);
   console.log("\n✅ Posted! ID:", tweetId);
+
   savePostLog(tweetId, postType, format, theme, content);
 }
 
