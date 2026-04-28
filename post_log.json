@@ -835,5 +835,17 @@
     "likes": null,
     "retweets": null,
     "replies": null
+  },
+  {
+    "id": "2049102706644853075",
+    "date": "2026-04-28T12:25:30.497Z",
+    "postType": "prompt",
+    "format": "prompt",
+    "theme": "データ分析・レポート要約",
+    "text": "これ昨日使ったら、かなり助かった。\n報告書やデータレポートの要点を効率的に抽出できます。\n「以下の[レポート本文]を読み、主要な結論、その根拠となるデータ、そして今後のアクションに繋がる示唆を、ビジネス視点で簡潔にまとめてください。重要な論点を優先してください。」\n#AI活用",
+    "impressions": null,
+    "likes": null,
+    "retweets": null,
+    "replies": null
   }
 ]
