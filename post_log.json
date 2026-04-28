@@ -823,5 +823,17 @@
     "likes": null,
     "retweets": null,
     "replies": null
+  },
+  {
+    "id": "2049007823619535031",
+    "date": "2026-04-28T06:08:28.627Z",
+    "postType": "prompt",
+    "format": "prompt",
+    "theme": "採用・面接準備",
+    "text": "昨日使ったら面接質問が深掘りできた！\n候補者の特性を見抜く面接質問を効率的に作成。\n\n「[職種名]の採用面接で、候補者の[見極めたい特性や能力]を効果的に評価するための質問を5つ提案してください。それぞれの質問には、その質問で何を知りたいかという意図も簡潔に添えてください。」\n\n#AI活用",
+    "impressions": null,
+    "likes": null,
+    "retweets": null,
+    "replies": null
   }
 ]
