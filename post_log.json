@@ -847,5 +847,17 @@
     "likes": null,
     "retweets": null,
     "replies": null
+  },
+  {
+    "id": "2049367018860953890",
+    "date": "2026-04-29T05:55:47.459Z",
+    "postType": "insight",
+    "format": "question",
+    "theme": "面接準備にAIを使うと何が変わるか",
+    "text": "面接準備、もうAIが先生？\n最近、面接準備にAI使ってみたんだけど、想定外の質問をされて、自分の思考が深まった気がする。知人も、AIで回答添削したら、もっと自然な話し方になったって言ってたな。単なる効率化じゃなくて、本質的な自己理解を助けてくれるツールなのかも。\nみんなは面接準備にAI使ってる？それとも使わない派？🤔\n#転職 #面接対策",
+    "impressions": null,
+    "likes": null,
+    "retweets": null,
+    "replies": null
   }
 ]
