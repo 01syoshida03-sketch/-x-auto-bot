@@ -919,5 +919,17 @@
     "likes": null,
     "retweets": null,
     "replies": null
+  },
+  {
+    "id": "2050904386428428624",
+    "date": "2026-05-03T11:44:44.423Z",
+    "postType": "prompt",
+    "format": "prompt",
+    "theme": "副業ポートフォリオのまとめ方",
+    "text": "副業ポートフォリオ、これ便利だった。\n\n副業ポートフォリオでアピールしたい経験を言語化するプロンプトです。\n\n「副業ポートフォリオ向けに、あなたの[専門分野]としての実績と強みをアピールする文章の構成案を提案してください。ターゲットは[想定クライアント]です。」\n\n#AI活用",
+    "impressions": null,
+    "likes": null,
+    "retweets": null,
+    "replies": null
   }
 ]
