@@ -907,5 +907,17 @@
     "likes": null,
     "retweets": null,
     "replies": null
+  },
+  {
+    "id": "2050819235975197185",
+    "date": "2026-05-03T06:06:23.012Z",
+    "postType": "prompt",
+    "format": "prompt",
+    "theme": "転職の自己PR・職務経歴書作成",
+    "text": "これ使ったら自己PRができた。\n転職活動で応募先ごとに自己PRを作るのが少し楽になるプロンプトです。\n\n「あなたの[職務経歴と強み]を提示します。これらを基に、応募企業に響く自己PR文を作成してください。具体的なエピソードを盛り込み、[〇〇字]程度でまとめてください。」\n\n#AI活用",
+    "impressions": null,
+    "likes": null,
+    "retweets": null,
+    "replies": null
   }
 ]
