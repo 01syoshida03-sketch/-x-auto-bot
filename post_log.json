@@ -931,5 +931,17 @@
     "likes": 3,
     "retweets": 0,
     "replies": 0
+  },
+  {
+    "id": "2051183788965953603",
+    "date": "2026-05-04T06:14:59.201Z",
+    "postType": "prompt",
+    "format": "prompt",
+    "theme": "副業・転職に使えるSNS発信文章",
+    "text": "これ使ったら文章作成が捗った😊\n副業・転職で使えるSNS自己紹介文の作成に便利。\n\n「あなたの専門性[専門性]と実績を、ターゲット[ターゲット層]に響くSNS投稿文で3パターン提案して。\n各投稿は150字以内とし、具体的なメリットを盛り込んでください。\n共感や課題解決を意識して。」\n#AI活用",
+    "impressions": null,
+    "likes": null,
+    "retweets": null,
+    "replies": null
   }
 ]
