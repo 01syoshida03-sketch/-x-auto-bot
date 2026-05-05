@@ -967,5 +967,17 @@
     "likes": null,
     "retweets": null,
     "replies": null
+  },
+  {
+    "id": "2051634140533903408",
+    "date": "2026-05-05T12:04:31.390Z",
+    "postType": "prompt",
+    "format": "prompt",
+    "theme": "副業案件の提案・営業メール作成",
+    "text": "応募へのハードルが下がった。\n副業案件に応募する営業メール作成に使えます。\n「[案件名]の副業案件に応募するメールを作成してください。\n私のスキル・経験は[自身のスキルや経験]です。\n案件内容に合わせた具体的な貢献ポイントを提示し、丁寧かつ意欲的なトーンで提案文を作成してください。」\n#AI活用",
+    "impressions": null,
+    "likes": null,
+    "retweets": null,
+    "replies": null
   }
 ]
