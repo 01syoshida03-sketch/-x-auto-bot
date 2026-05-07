@@ -1015,5 +1015,17 @@
     "likes": null,
     "retweets": null,
     "replies": null
+  },
+  {
+    "id": "2052372441083805790",
+    "date": "2026-05-07T12:58:15.954Z",
+    "postType": "prompt",
+    "format": "prompt",
+    "theme": "転職の志望動機を言語化する",
+    "text": "頭の中の志望動機、まとまった。\n転職の志望動機を整理して言語化するのに使えます。\n「[応募企業名]への志望動機を言語化したいです。私の職務経験、活かせる強み、そして貴社への関心点を簡潔に提示します。それらの要素を効果的に結びつけ、貴社に響く志望動機文の初稿を作成してください。」\n#AI活用",
+    "impressions": null,
+    "likes": null,
+    "retweets": null,
+    "replies": null
   }
 ]
