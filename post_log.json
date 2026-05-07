@@ -1003,5 +1003,17 @@
     "likes": null,
     "retweets": null,
     "replies": null
+  },
+  {
+    "id": "2052270264499478919",
+    "date": "2026-05-07T06:12:15.141Z",
+    "postType": "prompt",
+    "format": "prompt",
+    "theme": "年収交渉・給与アップの交渉文",
+    "text": "交渉文、冷静に書けた。\n給与アップ交渉のメール文作成に。\n\n「私の[これまでの具体的な貢献]を明確に盛り込み、今後の更なる貢献意欲と市場価値を鑑みた給与アップ交渉文を作成してください。希望年収[〇〇万円]を提示し、論理的かつ前向きなトーンで記述してください。 」\n\n#AI活用",
+    "impressions": null,
+    "likes": null,
+    "retweets": null,
+    "replies": null
   }
 ]
