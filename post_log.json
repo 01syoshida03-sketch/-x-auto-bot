@@ -1063,5 +1063,17 @@
     "likes": null,
     "retweets": null,
     "replies": null
+  },
+  {
+    "id": "2053080784320225419",
+    "date": "2026-05-09T11:52:58.135Z",
+    "postType": "prompt",
+    "format": "prompt",
+    "theme": "面接対策・想定質問への回答準備",
+    "text": "これ昨日使ったら、面接準備捗った！\n面接での想定質問に対し、STARメソッドを活用した効果的な回答案を生成し、準備時間を短縮します。\n「[面接の質問]に対して、[応募職種]で高評価を得られる回答案を、STARメソッドを用いて300字程度で作成してください。」\n#AI活用",
+    "impressions": null,
+    "likes": null,
+    "retweets": null,
+    "replies": null
   }
 ]
