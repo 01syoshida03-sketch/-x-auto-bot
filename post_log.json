@@ -1014,10 +1014,10 @@
     "format": "prompt",
     "theme": "副業案件の提案・営業メール作成",
     "text": "営業メールの構成、これ結構いい。\n副業案件提案の営業メール構成案を作成。\n「[案件内容]向けの営業メール構成案と、各セクションで強調すべきポイントを提案してください。私の強みは[自分のスキル/実績]です。\n相手の課題解決に繋がる内容で、読者が次へ進みたくなる構成にしてください。」\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 22,
+    "likes": 2,
+    "retweets": 0,
+    "replies": 0
   },
   {
     "id": "2061710699340898669",
@@ -1026,10 +1026,10 @@
     "format": "prompt",
     "theme": "転職の志望動機を言語化する",
     "text": "志望動機まとめるのが楽になった。\n\n自分の経験と応募先企業を結びつけた志望動機の作成に。\n「あなたの[これまでの職務経験や実績]と、[応募先の企業文化や求人内容]を具体的に関連付けて、説得力のある志望動機を作成してください。自身の貢献意欲が伝わるように調整してください。」\n\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 16,
+    "likes": 1,
+    "retweets": 0,
+    "replies": 0
   },
   {
     "id": "2062534353708785867",
@@ -1038,10 +1038,10 @@
     "format": "prompt",
     "theme": "副業ポートフォリオのまとめ方",
     "text": "これ昨夜使ったら構成がすぐできた\n副業ポートフォリオの軸を決めるのに役立つプロンプトです。\n「以下の情報に基づき、副業ポートフォリオの構成案と各セクションでアピールすべき内容を提案してください。ターゲット層：[ターゲット]、ポートフォリオの目的：[目的]」\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 22,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0
   },
   {
     "id": "2062895304446247025",
@@ -1050,10 +1050,10 @@
     "format": "prompt",
     "theme": "転職の自己PR・職務経歴書作成",
     "text": "応募先ごとの調整が楽に。\n自己PRを応募企業に合わせて最適化できます。\n「以下の私の職務経歴と[応募企業名]の募集要項を参考に、[応募職種]向けの自己PR文を推敲してください。特に、募集要項で強調されているスキルや経験を意識して表現を調整してください。」\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 15,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0
   },
   {
     "id": "2063230957096689751",
@@ -1062,10 +1062,10 @@
     "format": "prompt",
     "theme": "副業・転職に使えるSNS発信文章",
     "text": "これ昨日使ったら、SNS発信文が書けた。\n\nSNSで自分をアピールする投稿文を作成するプロンプトです。\n\n「SNSで[あなたの専門分野]について発信する投稿文を作成してください。ターゲットは[想定読者]です。スキルと魅力を伝える短い文章を、親しみやすいトーンで提案してください。」\n\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 5,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0
   },
   {
     "id": "2063597354343936312",
@@ -1074,9 +1074,9 @@
     "format": "prompt",
     "theme": "年収交渉・給与アップの交渉文",
     "text": "交渉文の構成、昨日試したら良かった\n年収交渉を打診する際の交渉文を作成するプロンプトです。\n「年収交渉を打診する際の、論理的で建設的な交渉文を提案してください。これまでの貢献と今後の意欲を具体的に盛り込み、特に[具体的な実績]について言及してください。」\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 2,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0
   }
 ]
