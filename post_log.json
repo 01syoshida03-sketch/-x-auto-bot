@@ -1038,10 +1038,10 @@
     "format": "prompt",
     "theme": "副業ポートフォリオのまとめ方",
     "text": "実績整理のコツ掴んだ✨\n副業ポートフォリオの魅力的な実績まとめに役立ちます。\n「副業ポートフォリオ作成のため、[プロジェクト名]と[その概要]をもとに、クライアントに響く実績アピールポイントを3つ抽出し、各説明文を生成してください。」\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 17,
+    "likes": 1,
+    "retweets": 0,
+    "replies": 0
   },
   {
     "id": "2067252554438770992",
@@ -1050,10 +1050,10 @@
     "format": "prompt",
     "theme": "スキルの棚卸しと市場価値の整理",
     "text": "これ使ったら、思考整理が捗った。\nこれまでの経験から自分の強みを見つけ、市場価値を高める次のステップを考えるプロンプト。\n「私の職務経歴と経験（[概要を記述]）から、市場で評価されるコアスキルを3つ特定し、それらのスキルを活かせる業界と職種を具体的に提案してください。」\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 8,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0
   },
   {
     "id": "2067519847299264911",
@@ -1062,10 +1062,10 @@
     "format": "prompt",
     "theme": "副業・転職に使えるSNS発信文章",
     "text": "これ昨日使ったら、実績が伝わりやすかった。\n副業や転職活動で役立つ、SNSでの実績紹介文を生成します。\n「私の[仕事内容]という業務での実績を、SNSで読者が共感し、信頼感を抱くようなトーンで紹介してください。特に強調したい成果は[具体的な成果]です。」\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 22,
+    "likes": 1,
+    "retweets": 0,
+    "replies": 1
   },
   {
     "id": "2068682418048122993",
@@ -1074,9 +1074,9 @@
     "format": "prompt",
     "theme": "副業ポートフォリオのまとめ方",
     "text": "ポートフォリオ作成が捗った\n副業ポートフォリオの構成案をAIに作ってもらうプロンプト。\n「副業ポートフォリオの構成案を提案してください。ターゲットは[どのような企業・個人]、提供スキルは[具体的なスキル]です。各項目で伝えるべき内容も簡潔に示してください。」\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 12,
+    "likes": 1,
+    "retweets": 0,
+    "replies": 1
   }
 ]
