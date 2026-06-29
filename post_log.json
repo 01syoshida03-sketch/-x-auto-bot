@@ -1002,10 +1002,10 @@
     "format": "prompt",
     "theme": "年収交渉・給与アップの交渉文",
     "text": "これ使ったら、納得感ある交渉文に。\n給与アップ交渉のベースとなる、論理的な交渉文作成に役立ちます。\n\n「上司への給与アップ交渉文を作成してください。私の[過去の貢献や実績]と今後の目標、希望給与額[○○円]を盛り込み、丁寧で前向きなトーンでお願いします。」\n\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 9,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0
   },
   {
     "id": "2069416141835964927",
@@ -1014,10 +1014,10 @@
     "format": "prompt",
     "theme": "副業・転職に使えるSNS発信文章",
     "text": "自己紹介文、すんなり完成✨\nSNS発信で、魅力的な自己紹介文を手軽に作成できます。\n「[ターゲット]に響くSNS自己紹介文を200字以内で作成してください。私の強みは[あなたの強みや実績]です。読んだ人が共感し、行動したくなるようなトーンでお願いします。」\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 7,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0
   },
   {
     "id": "2069674307496677643",
@@ -1026,10 +1026,10 @@
     "format": "prompt",
     "theme": "副業案件の提案・営業メール作成",
     "text": "営業メール、これ結構良かった！\n\n副業案件獲得の営業メール作成に使えるプロンプトです。\n\n「私は[あなたのスキル]を持つフリーランスです。[企業名]様へ、貴社の課題解決に繋がるような提案メールを作成してください。具体的にどのような価値を提供できるか、簡潔にまとめてください。」\n\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 77,
+    "likes": 3,
+    "retweets": 1,
+    "replies": 0
   },
   {
     "id": "2070036562482548897",
@@ -1038,10 +1038,10 @@
     "format": "prompt",
     "theme": "副業・転職に使えるSNS発信文章",
     "text": "これ昨日使ったら、発信のハードルが下がった。\n副業や転職に使えるSNS自己紹介文を生成します。\n\n「あなたの[これまでの経験やスキル]と[ターゲットとする読者]を元に、SNSで発信する自己紹介文を生成してください。簡潔に、あなたの魅力と提供できる価値が伝わるように調整してください。」\n\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 53,
+    "likes": 3,
+    "retweets": 1,
+    "replies": 0
   },
   {
     "id": "2070400639016845695",
@@ -1050,10 +1050,10 @@
     "format": "prompt",
     "theme": "面接対策・想定質問への回答準備",
     "text": "これ使ったら、思考が整理できた！\n面接の想定質問への回答を、効果的に準備するプロンプト。\n「[面接で聞かれる想定質問]に対し、あなたの[具体的な経験やスキル]を踏まえ、面接官に響くような回答案を作成してください。簡潔かつ論理的に、要点を絞ってまとめてください。」\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 128,
+    "likes": 2,
+    "retweets": 0,
+    "replies": 0
   },
   {
     "id": "2071127236783059259",
@@ -1062,10 +1062,10 @@
     "format": "prompt",
     "theme": "副業ポートフォリオのまとめ方",
     "text": "副業の文章、これで整った。\n\n副業実績から強みを伝える紹介文を生成。\n\n「副業ポートフォリオ用に、以下の実績から私の強みと貢献できることを明確に伝える紹介文を作成してください。特に、[ターゲット]が興味を持つような視点を含めてください。実績：[実績詳細]」\n\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 18,
+    "likes": 2,
+    "retweets": 0,
+    "replies": 3
   },
   {
     "id": "2071206202927673502",
@@ -1074,9 +1074,9 @@
     "format": "prompt",
     "theme": "面接対策・想定質問への回答準備",
     "text": "これ使ったら回答の深堀りができた\n面接の回答準備で、自分の経験を具体的に深掘りできるプロンプトです。質問と回答案を入れるだけ。\n「面接官の視点から、[質問]への私の回答案『[自身の回答案]』について、具体性や独自性を高めるための深掘りポイントを5つ提案してください。」\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 75,
+    "likes": 2,
+    "retweets": 0,
+    "replies": 0
   }
 ]
