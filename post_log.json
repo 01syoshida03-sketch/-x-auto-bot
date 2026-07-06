@@ -1002,10 +1002,10 @@
     "format": "prompt",
     "theme": "副業案件の提案・営業メール作成",
     "text": "これ昨日使ったら、少し楽になった。\n副業案件に合わせた営業メールの下書き作成に。\n「[募集案件名]に合わせた応募メールの原案を作成してください。私の[専門分野・スキル]を活かし、先方が興味を持つような導入と、簡潔な提案内容を含めてください。」\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 22,
+    "likes": 2,
+    "retweets": 0,
+    "replies": 0
   },
   {
     "id": "2072312960073281605",
@@ -1014,10 +1014,10 @@
     "format": "prompt",
     "theme": "年収交渉・給与アップの交渉文",
     "text": "給与交渉のメール文がスムーズにできた。\n給与アップ交渉に使うメール文のたたき台を作成するプロンプトです。\n「これまでの[具体的な実績や貢献]を述べ、[希望年収]への給与アップを交渉する丁寧なメール文を作成してください。今後の貴社への貢献意欲も強調してください。」\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 10,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0
   },
   {
     "id": "2072571331950858298",
@@ -1026,10 +1026,10 @@
     "format": "prompt",
     "theme": "副業案件の提案・営業メール作成",
     "text": "これ使ったら応募が捗った📩\n副業案件への応募メール作成に便利でした。\n\n「募集中の[案件内容]に対し、私の[スキルや経験]を活かした応募メールを作成してください。丁寧なビジネスメールの形式で、私の強みと提案内容を簡潔にまとめ、案件への熱意を伝えてください。」\n\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 15,
+    "likes": 1,
+    "retweets": 0,
+    "replies": 0
   },
   {
     "id": "2072666321821618425",
@@ -1038,10 +1038,10 @@
     "format": "prompt",
     "theme": "年収交渉・給与アップの交渉文",
     "text": "交渉文の構成、これ使ってスムーズ。\n年収・給与アップ交渉文の叩き台作成に役立ちます。\n\n「昇給交渉に向け、私の貢献と達成成果を基に、[希望年収]を提示する交渉文の構成案とキーフレーズを提案してください。市場価値への言及も含め、論理的な構成で。」\n\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 17,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0
   },
   {
     "id": "2073291001913835817",
@@ -1050,10 +1050,10 @@
     "format": "prompt",
     "theme": "転職の自己PR・職務経歴書作成",
     "text": "自己PR整理、これ良かった！\n自己PR作成時に、自分の強みと具体的なエピソードを整理するのに使えます。\n「私の職務経歴と経験、そして[応募企業名]の求める人物像を踏まえて、強みを3つ特定し、それぞれを裏付ける具体的なエピソードをSTAR形式で簡潔に記述してください。」\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 10,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0
   },
   {
     "id": "2073658463788376139",
@@ -1062,10 +1062,10 @@
     "format": "prompt",
     "theme": "転職の自己PR・職務経歴書作成",
     "text": "これ昨日使ったら、自己PRの構成がすぐできた。\n転職活動の自己PR文や職務経歴書の書き出し作成に役立ちます。\n\n「私の強み[強み]と、具体的なエピソード[エピソード]を基に、転職活動で採用担当者の心に響く自己PR文を作成してください。簡潔で説得力のある表現にしてください。」\n\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 22,
+    "likes": 1,
+    "retweets": 0,
+    "replies": 0
   },
   {
     "id": "2073743134593257952",
@@ -1074,9 +1074,9 @@
     "format": "prompt",
     "theme": "フリーランス向け見積もり・契約文書",
     "text": "契約書下書き、思ったより良かった🥳\nフリーランス向け業務委託契約書の下書き作成に役立ちます。\n\n「あなたはフリーランス契約の専門家です。[サービス内容]に関する業務委託契約書のドラフトを作成してください。フリーランスと企業間の目線で、一般的な条項を含めてください。」\n\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 18,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0
   }
 ]
