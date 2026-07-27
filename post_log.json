@@ -1026,10 +1026,10 @@
     "format": "prompt",
     "theme": "スキルの棚卸しと市場価値の整理",
     "text": "これ昨日使ったらキャリア整理が捗った\nこれまでのキャリアを棚卸し、市場価値の高いスキルを効率的に言語化するのに役立ちます。\n「私の[あなたの職種/業界]での経験を元に、現在の市場で特に評価されるスキルを5つ抽出し、具体的な行動例とともに言語化してください。」\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 5,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0
   },
   {
     "id": "2079542931363369223",
@@ -1038,10 +1038,10 @@
     "format": "prompt",
     "theme": "副業・転職に使えるSNS発信文章",
     "text": "SNSの自己紹介、迷ってたけど\n副業や転職でアピールするためのSNSプロフィール文を作成。💡\n「[あなたの職種]としてSNSでアピールするプロフィール文を作成してください。[具体的な実績]を盛り込み、あなたの強みと魅力を簡潔に伝える内容にしてください。」\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 26,
+    "likes": 1,
+    "retweets": 0,
+    "replies": 0
   },
   {
     "id": "2080267786811797950",
@@ -1050,10 +1050,10 @@
     "format": "prompt",
     "theme": "副業ポートフォリオのまとめ方",
     "text": "構成決めが楽になった。\n\n副業ポートフォリオの構成を考える時に使えるプロンプト。\n「あなたは副業ポートフォリオ作成の専門家です。\n以下の情報に基づき、[提供したいサービス]の副業ポートフォリオ構成案を、\n[ターゲット顧客]に響く形で提案してください。」\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 23,
+    "likes": 1,
+    "retweets": 0,
+    "replies": 0
   },
   {
     "id": "2080987320749002966",
@@ -1062,10 +1062,10 @@
     "format": "prompt",
     "theme": "副業案件の提案・営業メール作成",
     "text": "これ昨日使ったら、提案文がスッと書けた\n副業案件への提案や営業メール作成の補助に使えます。\n「副業案件の営業メールを作成。応募したい案件の詳細は[案件詳細]です。私の関連スキルは[スキル]なので、その点をアピールしてください。」\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 36,
+    "likes": 1,
+    "retweets": 0,
+    "replies": 2
   },
   {
     "id": "2081259845030944790",
@@ -1074,9 +1074,9 @@
     "format": "prompt",
     "theme": "転職の志望動機を言語化する",
     "text": "志望動機がスムーズに書けた👏\n転職活動における志望動機を整理し、言語化する際に役立ちます。\n「私のこれまでの[職務経験やスキル]と、応募企業への[入社意欲や魅力を感じる具体的な点]を提示します。これらをもとに、入社後に貢献したい内容を明確に含んだ志望動機文を作成してください。」\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 22,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0
   }
 ]
