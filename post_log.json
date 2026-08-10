@@ -1050,10 +1050,10 @@
     "format": "prompt",
     "theme": "面接対策・想定質問への回答準備",
     "text": "面接対策、捗るなぁ😊\n面接の想定質問に対する回答のたたき台作成に。\n\n「面接の想定質問『[質問内容]』に対する回答案を提案してください。\nあなたの[応募職種]としての経験や強みを具体的に踏まえ、STAR法を活用して論理的に構成してください。」\n\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 19,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0
   },
   {
     "id": "2085349547199644040",
@@ -1062,10 +1062,10 @@
     "format": "prompt",
     "theme": "転職の自己PR・職務経歴書作成",
     "text": "転職の自己PR、これ良かった\n自己PRや職務経歴書の強み、具体例の言語化をサポート。\n「私の[これまでの職務経歴や実績]と[応募企業が求める人物像]を参考に、自己PRで伝えるべき強みを3つ提案してください。それぞれの強みについて、具体的なエピソードも提示してください。」\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 25,
+    "likes": 1,
+    "retweets": 0,
+    "replies": 0
   },
   {
     "id": "2085694182144749589",
@@ -1074,9 +1074,9 @@
     "format": "prompt",
     "theme": "副業案件の提案・営業メール作成",
     "text": "これ昨日使ったら、構成すぐ出た。\n副業案件の提案・営業メール構成を作成する時に便利です。\n\n「[ターゲット企業]向けの副業提案メールを作成してください。私の専門は[提供サービス内容]です。相手の課題解決とメリットを明確に伝え、返信を促す構成でお願いします。」\n\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 40,
+    "likes": 1,
+    "retweets": 0,
+    "replies": 0
   }
 ]
