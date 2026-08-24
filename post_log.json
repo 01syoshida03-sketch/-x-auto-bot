@@ -1074,9 +1074,9 @@
     "format": "prompt",
     "theme": "スキルの棚卸しと市場価値の整理",
     "text": "自分の強み、客観視できた。\n\n職務経歴から強みとなるスキルと市場価値を整理するのに使えます。\n「私の[職務経歴]から、強みとなるスキルを5つ抽出し、それらを裏付ける成果を具体的に示してください。各スキルの市場価値についても簡潔に評価してください。」\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 10,
+    "likes": 1,
+    "retweets": 0,
+    "replies": 0
   }
 ]
