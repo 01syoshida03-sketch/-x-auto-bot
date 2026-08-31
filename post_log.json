@@ -1014,10 +1014,10 @@
     "format": "prompt",
     "theme": "面接対策・想定質問への回答準備",
     "text": "これ昨日使ったら、思考整理が捗った。\n\n面接の想定質問への回答準備を効率化するプロンプト。\n「面接の想定質問「[質問内容]」に対する回答を生成してください。私の[これまでの経験やスキル]を基に、面接官が納得できる具体的な回答案を300字程度で提案してください。」\n\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 17,
+    "likes": 1,
+    "retweets": 0,
+    "replies": 0
   },
   {
     "id": "2092212667788460191",
@@ -1026,10 +1026,10 @@
     "format": "prompt",
     "theme": "フリーランス向け見積もり・契約文書",
     "text": "これ昨日使ったら、スムーズだった\nフリーランス向けの見積もり文面作成、そのドラフト作成をサポート。\n「フリーランスとして[プロジェクト内容]の見積もり文面を作成してください。対応期間は[期間]とします。丁寧で簡潔な提案文としてまとめてください。」\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 20,
+    "likes": 1,
+    "retweets": 0,
+    "replies": 0
   },
   {
     "id": "2092575635453489172",
@@ -1038,10 +1038,10 @@
     "format": "prompt",
     "theme": "副業・転職に使えるSNS発信文章",
     "text": "自分の実績、これ使ったらサクッとまとまった。\n副業や転職を考えている人が、SNSで自分の実績を魅力的にアピールするための投稿文作成に。\n\n「私の実績は[実績内容]です。この実績から得られた学びや、それが次の仕事にどう繋がるかをアピールする約180字のSNS投稿文を作成してください。」\n\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 13,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0
   },
   {
     "id": "2092973293674393862",
@@ -1050,10 +1050,10 @@
     "format": "prompt",
     "theme": "面接対策・想定質問への回答準備",
     "text": "これ昨日使ったら、面接準備が捗った\n面接の想定質問に対し、経験を踏まえた回答を準備するのに便利。\n「あなたは採用面接官です。[質問内容]について、私の[職務経験]を踏まえ、STARメソッドの形式で具体的な回答を作成してください。状況・課題・行動・結果を明確にしてください。」\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 21,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0
   },
   {
     "id": "2093352228471845249",
@@ -1062,10 +1062,10 @@
     "format": "prompt",
     "theme": "スキルの棚卸しと市場価値の整理",
     "text": "昨日の自己分析で使ったら、思考が深まった💡\n現職での経験を元に、スキルの棚卸しと市場価値の整理ができます。\n「あなたの[職務経歴]から、強みとなるスキルを洗い出し、市場価値を評価してください。\nさらに、その市場価値を高めるための具体的なアクションプランを提案してください。」\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 9,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0
   },
   {
     "id": "2093448438595604858",
@@ -1074,9 +1074,9 @@
     "format": "prompt",
     "theme": "副業案件の提案・営業メール作成",
     "text": "案件の提案文、これ使うと質が上がった\n\n副業案件の営業メール作成に。構成と本文を提案します。\n\n「[クライアント名]様へ、[案件内容]の提案メールを作成。私の経験・スキルを活かした具体的な貢献方法を件名と本文で提案してください。」\n\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 7,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0
   }
 ]
