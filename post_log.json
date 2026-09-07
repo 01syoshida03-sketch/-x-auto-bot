@@ -1038,10 +1038,10 @@
     "format": "prompt",
     "theme": "転職の志望動機を言語化する",
     "text": "言語化の壁、少し解消した。\n自分の経験と企業ニーズを結びつけたい時に使ってみて。\n「[応募企業名]への転職志望動機の下書きを、論理的かつ説得力のある文章で作成してください。自身の[強みや経験]をどう活かし、その企業に具体的に貢献できるかを記述してください。」\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 24,
+    "likes": 1,
+    "retweets": 0,
+    "replies": 0
   },
   {
     "id": "2096232664646725802",
@@ -1050,10 +1050,10 @@
     "format": "prompt",
     "theme": "転職の自己PR・職務経歴書作成",
     "text": "これ昨日使ったら、表現に深みが出た。\n自己PRや職務経歴書の表現を、求人情報に最適化する。\n「あなたは採用担当者です。私の[自己PR文]と、添付する[求人情報]の内容を比較し、応募先の企業が求める人物像やスキルに合致するよう、具体例を交えてより魅力的に修正してください。」\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 10,
+    "likes": 1,
+    "retweets": 0,
+    "replies": 0
   },
   {
     "id": "2096504101710532754",
@@ -1062,10 +1062,10 @@
     "format": "prompt",
     "theme": "副業案件の提案・営業メール作成",
     "text": "ずっと手作業してたのに、提案文がスムーズに。\n副業案件の営業メール作成に便利です。\n「[クライアント名]様へ送る、副業案件の提案メールを作成してください。私の専門スキルは[あなたのスキル]です。相手企業への貢献を具体的に示し、返信を促す文面でお願いします。」\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 8,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0
   },
   {
     "id": "2096599256576770508",
@@ -1074,9 +1074,9 @@
     "format": "prompt",
     "theme": "副業・転職に使えるSNS発信文章",
     "text": "これ昨日使ったら発信内容に深みが出た✨\n副業・転職で使える、SNS発信用の自己紹介文を作成します。\n\n「私の[スキルや経験]を元に、SNSのフォロワーが共感する自己紹介文を作成してください。\n[ターゲット層]に響くメッセージで、興味を持ってもらえる文章にしてください。」\n\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 3,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0
   }
 ]
