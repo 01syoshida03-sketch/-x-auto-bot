@@ -1014,10 +1014,10 @@
     "format": "prompt",
     "theme": "副業・転職に使えるSNS発信文章",
     "text": "これ昨日使ったら投稿作成が捗った✨\n自分の経験やスキルをアピールするSNS投稿文作成に使えます。\n\n「[あなたの専門分野]の経験を活かし、[ターゲット層]に響くSNS投稿文を3つ提案してください。信頼感とベネフィットが伝わるように工夫してください。」\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 6,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0
   },
   {
     "id": "2099882924141150704",
@@ -1026,10 +1026,10 @@
     "format": "prompt",
     "theme": "キャリアプランの壁打ち・言語化",
     "text": "キャリアの方向性、これ使ったら少しクリアになった。\n自分の興味やスキルからキャリアの選択肢を広げたい時に。\n「私の現在のスキル、興味、これまでの経験を踏まえ、今後3〜5年で考えられるキャリアパスを複数提案してください。特に[重視したい要素]を考慮してください。」\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 3,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0
   },
   {
     "id": "2100243576500215828",
@@ -1038,10 +1038,10 @@
     "format": "prompt",
     "theme": "スキルの棚卸しと市場価値の整理",
     "text": "これ使ったら自分の強みが明確に。\n保有スキルを整理し、市場価値を客観的に評価できます。\n「これまでの私の職務経験と保有スキルを詳細に提示します。それらを元に、私の市場価値を客観的に分析し、[希望する職種]でさらに評価されるために強化すべきスキルを具体的に提案してください。」\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 9,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0
   },
   {
     "id": "2100501621465641102",
@@ -1050,10 +1050,10 @@
     "format": "prompt",
     "theme": "転職の自己PR・職務経歴書作成",
     "text": "これ昨日使ったら経験が整理できた\n漠然とした職務経験を、職務経歴書でアピールできる具体的な成果として言語化。\n「私の[職種]としての経験から、以下の内容を職務経歴書に記載する具体的な成果として表現してください。経験: [具体的な業務内容や取り組み]」\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 18,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0
   },
   {
     "id": "2100960202694754654",
@@ -1062,10 +1062,10 @@
     "format": "prompt",
     "theme": "転職の志望動機を言語化する",
     "text": "志望動機、昨日これで固まった\n転職の志望動機をスムーズに言語化するためのプロンプト。\n「あなたの職務経験、強み、転職理由、応募先の[企業名]で惹かれる点や貢献したいことを元に、[企業名]向けの志望動機を300字程度で提案してください。」\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 22,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0
   },
   {
     "id": "2101217623920758827",
@@ -1074,9 +1074,9 @@
     "format": "prompt",
     "theme": "面接対策・想定質問への回答準備",
     "text": "これ使ったら捗ったな\n面接の想定質問への回答案を効率的に準備する時に重宝します。\n「面接で[質問内容]と聞かれたと仮定し、私の[これまでの経験やスキル]を具体的なエピソードとして盛り込み、STARメソッドのような論理的な構成で説得力のある回答案を作成してください。」\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 30,
+    "likes": 1,
+    "retweets": 0,
+    "replies": 0
   }
 ]
