@@ -978,10 +978,10 @@
     "format": "prompt",
     "theme": "副業・転職に使えるSNS発信文章",
     "text": "SNS投稿文、これ意外と良かった！💡\n副業・転職活動で使えるSNS投稿文を作成します。\n\n「あなたはSNSでの発信が得意なAIです。私の[専門分野]における[強みや実績]を、副業や転職に繋がるような形で、フォロワーが興味を持つ簡潔なSNS投稿文として提案してください。」\n\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 14,
+    "likes": 1,
+    "retweets": 0,
+    "replies": 0
   },
   {
     "id": "2104640088944848976",
@@ -990,10 +990,10 @@
     "format": "prompt",
     "theme": "年収交渉・給与アップの交渉文",
     "text": "これ使ったら、交渉文、少し楽に。\n年収アップ交渉文のドラフト作成に役立ちます✉️\n「あなたは人事担当者です。\n現在の年収[現在の年収]から[希望年収]への昇給交渉メールの叩き台を作成してください。\n会社への貢献内容・実績を具体的に3点盛り込み、丁寧な文章でお願いします。」\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 21,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0
   },
   {
     "id": "2104866581998125149",
@@ -1002,10 +1002,10 @@
     "format": "prompt",
     "theme": "スキルの棚卸しと市場価値の整理",
     "text": "自分の棚卸し、捗ったわ。\nこれを使えば、自分の経験から活かせるスキルを客観的に洗い出すのに役立ちます。\n「あなたは[職種]としての経験から、習得したスキルを5つ洗い出し、それぞれのスキルについて具体的な業務事例を100字程度で簡潔に説明してください。」\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 8,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0
   },
   {
     "id": "2104976715214991696",
@@ -1014,10 +1014,10 @@
     "format": "prompt",
     "theme": "フリーランス向け見積もり・契約文書",
     "text": "契約書読むのが楽になった。\n業務委託契約書の要点とリスクを素早く確認したい時に。\n\n「以下の[業務委託契約書の内容]を読み込み、フリーランスとして特に注意すべき条項や、不利益になりうる箇所を具体的に指摘してください。それぞれの指摘について、簡潔に理由も加えてください。」\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 16,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0
   },
   {
     "id": "2105226911869706694",
@@ -1026,10 +1026,10 @@
     "format": "prompt",
     "theme": "年収交渉・給与アップの交渉文",
     "text": "年収交渉の準備、これでかなり楽に。\n給与アップ交渉に向けた、実績を伝える文章を作成します。\n\n「あなたは、給与アップ交渉のための丁寧な提案文を作成するAIです。私の[具体的な実績]と今後の貢献意欲を伝え、自身の市場価値を考慮した交渉文を作成してください。」\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 6,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0
   },
   {
     "id": "2105337549711704558",
@@ -1038,10 +1038,10 @@
     "format": "prompt",
     "theme": "転職の志望動機を言語化する",
     "text": "志望動機がスッと整理できた💡\n転職活動で、応募企業に合わせた志望動機を組み立てるのに使えます。\n「[応募企業名]の[募集ポジション]に対する志望動機を言語化してください。あなたのこれまでの経験・強みと、入社後に貢献したいことを明確に結びつけて表現してください。」\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 23,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0
   },
   {
     "id": "2105708743312736639",
@@ -1050,10 +1050,10 @@
     "format": "prompt",
     "theme": "転職の志望動機を言語化する",
     "text": "志望動機、これでまとまった。\n転職の志望動機を、あなたの経験と応募企業の接点を明確にしながら言語化するプロンプトです。\n\n「[応募企業名]への志望動機を、これまでの[自身の経験やスキル]と貴社で実現したいことを結びつけて250字程度で言語化してください。」\n\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 25,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0
   },
   {
     "id": "2106060126633542140",
@@ -1062,10 +1062,10 @@
     "format": "prompt",
     "theme": "面接対策・想定質問への回答準備",
     "text": "いつも回答に悩んでたのに、スッキリ💡\n面接の想定質問に対し、自分の経験を活かした回答を準備したい時に。\n「面接の想定質問「[想定質問]」に対して、[あなたの職務内容や経験]を考慮した上で、STAR法を意識した回答の構成案と話すべきポイントを簡潔にまとめてください。」\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 7,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0
   },
   {
     "id": "2106676926534537315",
@@ -1074,9 +1074,9 @@
     "format": "prompt",
     "theme": "副業ポートフォリオのまとめ方",
     "text": "実績の書き方、悩んでたのが\n副業ポートフォリオに載せる実績を、見る人が知りたい情報に合わせて記述します。\n\n「以下の副業実績を、ポートフォリオでアピールできるよう、サービス内容、成果、工夫点、得られた学びの要素を盛り込んで200字程度でまとめてください。\n[あなたの副業実績]」\n\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 43,
+    "likes": 1,
+    "retweets": 0,
+    "replies": 0
   }
 ]
