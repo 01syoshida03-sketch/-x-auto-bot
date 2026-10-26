@@ -990,10 +990,10 @@
     "format": "prompt",
     "theme": "フリーランス向け見積もり・契約文書",
     "text": "これ昨日使ったら、結構使えた\nフリーランスとして業務委託契約書を作成する際、提案する契約内容の主要な構成要素を漏れなく洗い出すのに便利です。\n「[サービス内容]に関する業務委託契約書の主要な構成要素を提案してください。各項目には簡潔な説明も加えてください。」\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 11,
+    "likes": 1,
+    "retweets": 0,
+    "replies": 1
   },
   {
     "id": "2112568057369423962",
@@ -1002,10 +1002,10 @@
     "format": "prompt",
     "theme": "スキルの棚卸しと市場価値の整理",
     "text": "これ昨日使ったら、思考が整理できた。\n自身のスキル棚卸しと市場価値の把握に役立つプロンプトです。\n「私の[職務経歴の概要]を踏まえ、保有スキルとその市場価値を分析してください。さらに、キャリアアップのために強化すべきスキルや、今後の学習ポイントも提案してください。」\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 19,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0
   },
   {
     "id": "2112934732896116958",
@@ -1014,10 +1014,10 @@
     "format": "prompt",
     "theme": "副業・転職に使えるSNS発信文章",
     "text": "これ使ったら楽になった😊\n副業や転職で活かせる自分の強みをSNSで発信する際に便利です。\n\n「あなたの[職種や専門分野]における強みや実績を、SNS投稿用に3つの短文でまとめてください。読者が共感し、もっと知りたいと思うような親しみやすいトーンで記述してください。」\n\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 17,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0
   },
   {
     "id": "2113183913594298812",
@@ -1026,10 +1026,10 @@
     "format": "prompt",
     "theme": "年収交渉・給与アップの交渉文",
     "text": "言葉選びの悩み減った。\n年収交渉・給与アップの交渉文を作成するプロンプトです。\n「現在の年収[現在の年収]円、希望年収[希望年収]円です。過去の具体的な実績と今後の会社への貢献意欲を盛り込み、論理的で丁寧な交渉文を作成してください。」\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 25,
+    "likes": 2,
+    "retweets": 0,
+    "replies": 0
   },
   {
     "id": "2113296381226234118",
@@ -1038,10 +1038,10 @@
     "format": "prompt",
     "theme": "フリーランス向け見積もり・契約文書",
     "text": "これ昨日使ったら納得感あった！💡\n見積書の項目出しと単価の構成案を提案するプロンプト。\n「[提供サービス]のフリーランス向け見積書を作成したいです。内訳項目、それぞれの単価目安、そして合計金額の構成案を、顧客への説明文も添えて提示してください。」\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 23,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0
   },
   {
     "id": "2113545366201356638",
@@ -1050,10 +1050,10 @@
     "format": "prompt",
     "theme": "転職の自己PR・職務経歴書作成",
     "text": "自己PRの構成作り、捗った😳\n転職活動で差がつく自己PR文の方向性や構成を効率的に決めるのに役立ちます。\n「あなたの[職務経験]で培った強みと、[志望企業/業界]で活かしたいスキルを踏まえ、自己PRの骨子を作成してください。」\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 11,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0
   },
   {
     "id": "2113656455823859782",
@@ -1062,10 +1062,10 @@
     "format": "prompt",
     "theme": "年収交渉・給与アップの交渉文",
     "text": "これ昨日使ったら、交渉文が書けた。\n年収交渉で使える、根拠ある交渉文の下書き作成に役立ちます。\n「私の[担当業務と主な実績]、市場価値、今後の貢献意欲を基に、給与アップ交渉のためのメール文を作成してください。希望年収は[〇〇万円]で、論理的かつ丁寧なトーンで提案してください。」\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 11,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0
   },
   {
     "id": "2113902187222839649",
@@ -1074,9 +1074,9 @@
     "format": "prompt",
     "theme": "年収交渉・給与アップの交渉文",
     "text": "これ昨日使ったら構成が良かった。\n年収交渉のベースとなる交渉文を作るプロンプトです。\n「あなたは人事担当者です。私の[現在の役割と貢献]と[希望年収]を考慮し、会社側が前向きに検討したくなるような年収交渉文を作成してください。論理的かつ建設的なトーンでお願いします。」\n#AI活用",
-    "impressions": null,
-    "likes": null,
-    "retweets": null,
-    "replies": null
+    "impressions": 14,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0
   }
 ]
